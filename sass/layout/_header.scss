@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.true_header {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $bg-colour-localisation;
+    &__ville {
+        margin: 20px;
+    }
+}
+
+#logo {
+    position: relative;
+    left: 35%;
+}

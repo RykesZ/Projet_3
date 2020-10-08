@@ -1,0 +1,26 @@
+.explorer {
+    text-align: center;
+    background-color: #e7e7e7;
+    h2, p {
+        text-align: center;
+    }
+    h2 {
+        margin-left: $margin-h2-explorer;
+        margin-right: $margin-h2-explorer;
+    }
+    p {
+        margin-left: $margin-p-explorer;
+        margin-right: $margin-p-explorer;
+    }
+}
+
+.fonctionnement {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-map-marker-alt {
+    align-self: center;
+}

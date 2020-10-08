@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/be0bc1f7d6.js" crossorigin="anonymous"></script>
     <title>Ohmyfood!</title>
 </head>
 
 <body>
-    <header><p>Logo</p></header>
-    <div><p>Localisation</p></div>
-    <div>
-        <div><p>Réserver le menu qui vous convient</p></div>
-        <div><p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p></div>
-        <div>Explorez nos restaurants</div>
-    </div>
-    <div>
-        <p>Fonctionnement</p>
-        <div><!--Logo 1 --><!--Icône tel --><p>Choisissez un restaurant</p></div>
-        <div><!--Logo 2 --><!--Icône liste --><p>Composez votre menu</p></div>
-        <div><!--Logo 3 --><!--Icône market --><p>Dégustez au restaurant</p></div>
-    </div>
-    <div>
-        <p>Restaurants</p>
+    <header>
+        <div class="true_header">
+            <button id="retour">Retour</button>
+            <h1 id="logo">ohmyfood</h1>
+        </div>
+        <div class="localisation">
+            <i class="fas fa-map-marker-alt fa-2x"></i>
+            <p class="localisation__ville">Paris, Belleville</p>
+        </div>
+    </header>
+    
+    <section class="explorer">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="explorer__button">Explorer nos restaurants</button>
+    </section>
+    <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <button class="fonctionnement__bubble"><!--Logo 1 --><!--Icône tel -->Choisissez un restaurant</button>
+        <button class="fonctionnement__bubble"><!--Logo 2 --><!--Icône liste -->Composez votre menu</button>
+        <button class="fonctionnement__bubble--purple"><!--Logo 3 --><!--Icône market -->Dégustez au restaurant</button>
+    </section>
+    <section>
+        <h2>Restaurants</h2>
         <div>
-            <!--image restau -->
+            <div><!--image restau --></div>
             <div>
-            <p>La palette du goût</p>
-            <p>Localisation</p>
+                <div>
+                    <p>La palette du goût</p>
+                    <p>Localisation</p>
+                </div>
+                <div><!--Logo j'aime--></div>
             </div>
-            <!--Logo j'aime-->
         </div>
         <div>
             <!--image restau -->
@@ -54,8 +66,8 @@
             </div>
             <!--Logo j'aime-->
         </div>
-    </div>
-    <footer><p>Footer</p></footer>
+    </section>
+    <footer><h4>ohmyfood</h4></footer>
 
 
 </body>

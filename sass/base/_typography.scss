@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(../../public/fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../public/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(../../public/fonts/Roboto-Bold.ttf);
+}
+
+h1, h4 {
+    font-family: 'Shrikhand', sans-serif;
+}
+
+h4 {
+    color: white;
+}
+
+h3, p {
+    font-family: 'Roboto';
+}
+
+h2 {
+    font-family: 'Roboto-Bold';
+    font-size: $h2-font-size;
+    font-weight: 1000;
+}
+
+.localisation {
+    &__ville {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.explorer {
+    p {
+        font-size: 1.7em;
+    }
+}
