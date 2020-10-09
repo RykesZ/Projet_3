@@ -3,6 +3,8 @@ body {
 }
 
 .explorer {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: #f0f0f0;
     h2, p {
@@ -11,7 +13,7 @@ body {
     h2 {
         margin-left: $margin-h2-explorer;
         margin-right: $margin-h2-explorer;
-        margin-top: 0px;
+        margin-top: 50px;
     }
     p {
         margin-left: $margin-p-explorer;

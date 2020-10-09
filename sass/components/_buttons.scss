@@ -11,6 +11,9 @@
         font-family: 'Roboto';
         font-weight: 700;
         border: none;
+        margin-bottom: 80px;
+        width: 350px;
+        align-self: center;
     }
 }
 
@@ -23,8 +26,8 @@
         margin-bottom: 15px;
         margin-left: 30px;
         padding: 35px;
-        padding-top: 45px;
-        padding-bottom: 45px;
+        padding-top: 35px;
+        padding-bottom: 35px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         font-size: 1.7em;
         font-family: 'Roboto-Bold';
@@ -36,24 +39,35 @@
             background-color: #eee0ff;
         }
         .fa-mobile-alt {
-            margin-left: 40px;
-            margin-right: 65px;
+            margin-left: -30px;
+            margin-right: 60px;
+            color: gray;
         }
         .fa-list-ul {
-            margin-left: 35px;
-            margin-right: 60px;
+            margin-left: -35px;
+            margin-right: 50px;
+            color: gray;
         }
         .fa-store {
-            margin-left: 30px;
-            margin-right: 60px;
+            margin-left: -40px;
+            margin-right: 45px;
             color: $colour-primary;
         }
-        .icon-one {
-            width: 50px;
-            height: 50px;
-           position: absolute;
-           left: 20px;
-           background-color: white;
+        .circle {
+            position: relative;
+            right: 65px;
+            display: flex;
+            .fa-circle {
+                color: $colour-primary;
+            }
+            .number {
+                position: absolute;
+                z-index: 2;
+                left: 20px;
+                align-self: center;
+                color: white;
+                margin: 0;
+            }
         }
     }
 }

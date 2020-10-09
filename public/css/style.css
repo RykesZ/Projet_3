@@ -3,6 +3,8 @@ body {
 }
 
 .explorer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: #f0f0f0;
 }
@@ -12,7 +14,7 @@ body {
 .explorer h2 {
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 0px;
+  margin-top: 50px;
 }
 .explorer p {
   margin-left: 5%;
@@ -81,6 +83,9 @@ h2 {
   font-family: "Roboto";
   font-weight: 700;
   border: none;
+  margin-bottom: 80px;
+  width: 350px;
+  align-self: center;
 }
 
 .fonctionnement__bubble {
@@ -91,8 +96,8 @@ h2 {
   margin-bottom: 15px;
   margin-left: 30px;
   padding: 35px;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 1.7em;
   font-family: "Roboto-Bold";
@@ -105,24 +110,35 @@ h2 {
   background-color: #eee0ff;
 }
 .fonctionnement__bubble .fa-mobile-alt {
-  margin-left: 40px;
-  margin-right: 65px;
+  margin-left: -30px;
+  margin-right: 60px;
+  color: gray;
 }
 .fonctionnement__bubble .fa-list-ul {
-  margin-left: 35px;
-  margin-right: 60px;
+  margin-left: -35px;
+  margin-right: 50px;
+  color: gray;
 }
 .fonctionnement__bubble .fa-store {
-  margin-left: 30px;
-  margin-right: 60px;
+  margin-left: -40px;
+  margin-right: 45px;
   color: #9356DC;
 }
-.fonctionnement__bubble .icon-one {
-  width: 50px;
-  height: 50px;
+.fonctionnement__bubble .circle {
+  position: relative;
+  right: 65px;
+  display: flex;
+}
+.fonctionnement__bubble .circle .fa-circle {
+  color: #9356DC;
+}
+.fonctionnement__bubble .circle .number {
   position: absolute;
+  z-index: 2;
   left: 20px;
-  background-color: white;
+  align-self: center;
+  color: white;
+  margin: 0;
 }
 
 header {
