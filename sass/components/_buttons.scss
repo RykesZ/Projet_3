@@ -1,10 +1,3 @@
-#retour {
-    position: absolute;
-    left: 5%; top: 3%;
-    height: 70px;
-    width: 70px;
-}
-
 .explorer {
     &__button {
         border-radius: 50px;
@@ -28,15 +21,39 @@
         border-radius: 30px;
         margin-top: 15px;
         margin-bottom: 15px;
-        margin-left: 5%;
+        margin-left: 30px;
         padding: 35px;
         padding-top: 45px;
         padding-bottom: 45px;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         font-size: 1.7em;
         font-family: 'Roboto-Bold';
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        pointer-events: none;
         &--purple {
-            background-color: #f5edff;
+            background-color: #eee0ff;
+        }
+        .fa-mobile-alt {
+            margin-left: 40px;
+            margin-right: 65px;
+        }
+        .fa-list-ul {
+            margin-left: 35px;
+            margin-right: 60px;
+        }
+        .fa-store {
+            margin-left: 30px;
+            margin-right: 60px;
+            color: $colour-primary;
+        }
+        .icon-one {
+            width: 50px;
+            height: 50px;
+           position: absolute;
+           left: 20px;
+           background-color: white;
         }
     }
 }

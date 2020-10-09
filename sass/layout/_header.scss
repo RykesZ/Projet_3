@@ -1,27 +1,41 @@
 header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    height: 80px;
+    top: 0;
+    align-items: center;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.true_header {
-    z-index: 2;
+#Retour {
     display: flex;
-    flex-direction: row;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    height: 80px;
+    top: 0;
+    align-items: center;
+    padding-left: 20px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
+
 
 .localisation {
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: $bg-colour-localisation;
+    margin-top: 80px;
     &__ville {
         margin: 20px;
     }
 }
 
-#logo {
-    position: relative;
-    left: 35%;
-}

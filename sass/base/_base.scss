@@ -1,12 +1,17 @@
+body {
+    margin: 0;
+}
+
 .explorer {
     text-align: center;
-    background-color: #e7e7e7;
+    background-color: #f0f0f0;
     h2, p {
         text-align: center;
     }
     h2 {
         margin-left: $margin-h2-explorer;
         margin-right: $margin-h2-explorer;
+        margin-top: 0px;
     }
     p {
         margin-left: $margin-p-explorer;
