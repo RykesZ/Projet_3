@@ -22,12 +22,31 @@ body {
 }
 
 .fonctionnement {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 200px;
 }
 
 .fa-map-marker-alt {
     align-self: center;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    margin: 0;
+    h2 {
+        margin-left: 20px;
+    }
+}
+
+img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
 }

@@ -71,3 +71,67 @@
         }
     }
 }
+
+.restaurants {
+    &__module {
+        margin-bottom: 20px;
+        border: hidden;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        pointer-events: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        &--palette {
+            background-image: url(../images/la_palette_du_gout.jpg);
+            background-size: 104%;
+            background-position: 50% -80px;
+        }
+        &--note {
+            background-image: url(../images/la_note_enchantee.jpg);
+            background-size: 100%;
+            background-position: 50% -202px;
+        }
+        &--francaise {
+            background-image: url(../images/a_la_francaise.jpg);
+            background-size: 104%;
+            background-position: 50% -75px;
+        }
+        &--delice {
+            background-image: url(../images/le_delice_des_sens.jpg);
+            background-size: 100%;
+            background-position: 50% -75px;
+        }
+        &--palette, &--note, &--francaise, &--delice {
+            height: 310px;
+            width: 440px;
+        }
+        &__bandeau {
+            background-color: rgb(189, 189, 189);
+            height: 90px;
+            width: 100%;
+            border-radius: 0 0 20px 20px;
+            display: flex;
+            justify-content: flex-start;
+            &__nom-loc {
+                display: flex;
+                flex-direction: column;
+                h3 {
+                    margin: 0;
+                    margin-left: 17px;
+                    font-size: 1.7em;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 1.7em;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
