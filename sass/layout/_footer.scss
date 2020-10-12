@@ -1,3 +1,24 @@
 footer {
     background-color: #353535;
+    padding: 30px;
+    h4 {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    p {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .links_footer {
+        display: flex;
+        justify-content: flex-start;
+        .fa-hands-helping {
+            color: white;
+            margin-right: 10px;
+        }
+        .fa-utensils {
+            color: white;
+            margin-right: 13px;
+        }
+    }
 }

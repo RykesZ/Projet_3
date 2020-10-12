@@ -45,12 +45,6 @@ body {
   margin-left: 20px;
 }
 
-img {
-  width: 350px;
-  height: 200px;
-  object-fit: cover;
-}
-
 @font-face {
   font-family: "Shrikhand";
   src: url(../../public/fonts/Shrikhand-Regular.ttf);
@@ -70,6 +64,10 @@ header h1 {
 footer h4 {
   color: white;
   font-family: "Shrikhand", sans-serif;
+}
+footer p {
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 h3, p {
@@ -265,6 +263,27 @@ header {
 
 footer {
   background-color: #353535;
+  padding: 30px;
+}
+footer h4 {
+  margin: 0;
+  margin-bottom: 30px;
+}
+footer p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+footer .links_footer {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .links_footer .fa-hands-helping {
+  color: white;
+  margin-right: 10px;
+}
+footer .links_footer .fa-utensils {
+  color: white;
+  margin-right: 13px;
 }
 
 /* {
