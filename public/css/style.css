@@ -38,8 +38,9 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
   margin: 0;
+  margin-bottom: 70px;
 }
 .restaurants h2 {
   margin-left: 20px;
@@ -61,7 +62,7 @@ header h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
-footer h4 {
+footer .logo_footer {
   color: white;
   font-family: "Shrikhand", sans-serif;
 }
@@ -87,6 +88,10 @@ h2 {
 
 .explorer p {
   font-size: 1.7em;
+}
+
+.menu__a_la_francaise h2 {
+  font-family: "Shrikhand", sans-serif;
 }
 
 .explorer__button {
@@ -116,7 +121,7 @@ h2 {
   padding: 35px;
   padding-top: 35px;
   padding-bottom: 35px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39, 39, 39, 0.19);
   font-size: 1.7em;
   font-family: "Roboto-Bold";
   display: flex;
@@ -164,7 +169,7 @@ h2 {
   border: hidden;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39, 39, 39, 0.19);
   pointer-events: none;
   margin-left: 20px;
   margin-right: 20px;
@@ -173,6 +178,16 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.restaurants__module .new {
+  color: #135f4c;
+  font-weight: bold;
+  background-color: #99E2D0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+  position: relative;
+  left: 350px;
+  bottom: 180px;
 }
 .restaurants__module--palette {
   background-image: url(../images/la_palette_du_gout.jpg);
@@ -199,26 +214,36 @@ h2 {
   width: 440px;
 }
 .restaurants__module__bandeau {
-  background-color: #bdbdbd;
+  background-color: white;
   height: 90px;
   width: 100%;
   border-radius: 0 0 20px 20px;
   display: flex;
   justify-content: flex-start;
 }
-.restaurants__module__bandeau__nom-loc {
-  display: flex;
-  flex-direction: column;
-}
 .restaurants__module__bandeau__nom-loc h3 {
   margin: 0;
-  margin-left: 17px;
   font-size: 1.7em;
   font-weight: bold;
+  position: absolute;
+  left: 40px;
+  margin-top: 15px;
 }
 .restaurants__module__bandeau__nom-loc p {
   font-size: 1.7em;
   margin: 0;
+  position: absolute;
+  left: 40px;
+  margin-top: 45px;
+}
+.restaurants__module__bandeau__fav {
+  position: relative;
+  left: 375px;
+  align-self: center;
+}
+.restaurants__module__bandeau__fav .fa-heart {
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
 }
 
 header {
@@ -265,13 +290,13 @@ footer {
   background-color: #353535;
   padding: 30px;
 }
-footer h4 {
+footer .logo_footer {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 footer p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 footer .links_footer {
   display: flex;
@@ -284,6 +309,48 @@ footer .links_footer .fa-hands-helping {
 footer .links_footer .fa-utensils {
   color: white;
   margin-right: 13px;
+}
+
+.menu {
+  margin-top: 380px;
+  background-color: #f7f7f7;
+  border-radius: 50px 50px 0 0;
+  padding: 20px;
+}
+.menu__section__plat {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39, 39, 39, 0.19);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.menu__section__plat__nom h3, .menu__section__plat__nom p {
+  margin: 0;
+}
+.menu__section__plat__nom h3 {
+  margin-bottom: 10px;
+}
+.menu__section__plat__prix {
+  font-weight: bold;
+  align-self: flex-end;
+  margin: 0;
+}
+.menu__section__plat__select {
+  display: flex;
+  background-color: #99E2D0;
+}
+.menu__section__plat__select .fa-check-circle {
+  justify-content: center;
+  align-self: center;
+  color: white;
+}
+
+.bg_a_la_francaise {
+  background-image: url(../images/a_la_francaise.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 50% 75px;
 }
 
 /* {

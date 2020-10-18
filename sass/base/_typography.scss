@@ -21,7 +21,7 @@ header {
 }
 
 footer {
-    h4 {
+    .logo_footer {
         color: white;
         font-family: 'Shrikhand', sans-serif;
     }
@@ -51,5 +51,13 @@ h2 {
 .explorer {
     p {
         font-size: 1.7em;
+    }
+}
+
+.menu {
+    &__a_la_francaise {
+        h2 {
+            font-family: 'Shrikhand', sans-serif;
+        }
     }
 }

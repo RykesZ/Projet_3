@@ -28,7 +28,7 @@
         padding: 35px;
         padding-top: 35px;
         padding-bottom: 35px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 4px 8px 0 rgba(39,39,39,0.2), 0 3px 10px 0 rgba(39,39,39,0.19);
         font-size: 1.7em;
         font-family: 'Roboto-Bold';
         display: flex;
@@ -78,7 +78,7 @@
         border: hidden;
         border-radius: 20px;
         background-color: white;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39,39,39,0.19);
         pointer-events: none;
         margin-left: 20px;
         margin-right: 20px;
@@ -87,6 +87,16 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        .new {
+            color:#135f4c;
+            font-weight: bold;
+            background-color: $colour-tertiary;
+            padding: 5px 10px 5px 10px;
+            border-radius: 2px;
+            position: relative;
+            left: 350px;
+            bottom: 180px;
+        }
         &--palette {
             background-image: url(../images/la_palette_du_gout.jpg);
             background-size: 104%;
@@ -112,24 +122,36 @@
             width: 440px;
         }
         &__bandeau {
-            background-color: rgb(189, 189, 189);
+            background-color: rgb(255, 255, 255);
             height: 90px;
             width: 100%;
             border-radius: 0 0 20px 20px;
             display: flex;
             justify-content: flex-start;
             &__nom-loc {
-                display: flex;
-                flex-direction: column;
                 h3 {
                     margin: 0;
-                    margin-left: 17px;
                     font-size: 1.7em;
                     font-weight: bold;
+                    position: absolute;
+                    left: 40px;
+                    margin-top: 15px;
                 }
                 p {
                     font-size: 1.7em;
                     margin: 0;
+                    position: absolute;
+                    left: 40px;
+                    margin-top: 45px;
+                }
+            }
+            &__fav {
+                position: relative;
+                left: 375px;
+                align-self: center;
+                .fa-heart {
+                    -webkit-text-stroke: 1px #000;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }
