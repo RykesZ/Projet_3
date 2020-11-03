@@ -6,6 +6,9 @@ body {
   justify-content: center;
   background-color: grey;
 }
+body .restaurants__liste__module {
+  width: 100%;
+}
 
 @media screen and (min-width: 655px) {
   body {
@@ -14,6 +17,9 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
+  }
+  body .restaurants__liste__module {
+    width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -24,6 +30,9 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+  body .restaurants__liste__module {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   body {
@@ -33,6 +42,9 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+  body .restaurants__liste__module {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1450px) {
   body {
@@ -41,6 +53,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  body .restaurants__liste__module {
+    width: 50%;
   }
 }
 .explorer {
@@ -85,6 +100,58 @@ body {
   margin-left: 20px;
 }
 
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: moccasin;
+  z-index: 1000;
+  margin: 0;
+  animation-name: disappearing;
+  animation-duration: 1000ms;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+.loading__holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading__holder__image {
+  transform-origin: bottom;
+  animation-name: loading;
+  animation-duration: 2000ms;
+  animation-fill-mode: both;
+  animation-iteration-count: 5;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.25, 0.75);
+  }
+  75% {
+    transform: scale(0.5, 2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes disappearing {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url(../../public/fonts/Shrikhand-Regular.ttf);
@@ -129,8 +196,32 @@ h2 {
   font-size: 1.7em;
 }
 
-.menu__a_la_francaise h2 {
+.menu__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__text h2 {
   font-family: "Shrikhand", sans-serif;
+}
+.menu__text .fa-heart {
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.soulignement {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 2px;
+}
+
+.new {
+  font-family: "Roboto";
+}
+
+button:focus {
+  outline: 0;
 }
 
 .explorer__button {
@@ -211,8 +302,6 @@ h2 {
 .restaurants__liste__module {
   margin-bottom: 20px;
   border: hidden;
-  /*box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39,39,39,0.19);*/
-  pointer-events: none;
   padding: 20px;
   position: relative;
   display: flex;
@@ -224,7 +313,7 @@ h2 {
   height: 310px;
 }
 .restaurants__liste__module .new {
-  color: #135f4c;
+  color: #1b6150;
   font-weight: bold;
   background-color: #99E2D0;
   padding: 5px 10px 5px 10px;
@@ -286,14 +375,27 @@ h2 {
 .restaurants__liste__module__bandeau__fav .fa-heart {
   -webkit-text-stroke: 1px #000;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.restaurants__liste__module__bandeau__fav .fa-heart:hover {
+  animation-name: heart-fill;
+  animation-duration: 1s;
 }
 
+@keyframes heart-fill {
+  0% {
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    -webkit-text-fill-color: slateblue;
+  }
+}
 header {
   display: flex;
   justify-content: center;
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 500;
   background-color: white;
   height: 80px;
   top: 0;
@@ -307,7 +409,7 @@ header {
   justify-content: flex-start;
   position: fixed;
   width: 100%;
-  z-index: 1001;
+  z-index: 501;
   height: 80px;
   top: 0;
   align-items: center;
@@ -368,41 +470,117 @@ footer .links_footer .fa-utensils {
   border-radius: 50px 50px 0 0;
   padding: 20px;
 }
-.menu__section__plat {
+.menu__section__liste {
   display: flex;
+  flex-wrap: wrap;
 }
-.menu__section__plat__infos {
-  background-color: #ffffff;
-  border-radius: 20px 0 0 20px;
-  box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39, 39, 39, 0.19);
+.menu__section__liste__shadow-holder {
+  box-shadow: 1px 4px 8px 1px rgba(173, 173, 173, 0.2), 2px 6px 20px 2px rgba(136, 136, 136, 0.19);
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+  top: 50px;
+  opacity: 1;
+  transform: translateY(-50px);
+  animation-name: slide-up;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+}
+.menu__section__liste__shadow-holder + .menu__section__liste__shadow-holder:nth-of-type(1) {
+  animation-delay: 250ms;
+}
+.menu__section__liste__shadow-holder + .menu__section__liste__shadow-holder:nth-of-type(2) {
+  animation-delay: 500ms;
+}
+.menu__section__liste__shadow-holder + .menu__section__liste__shadow-holder:nth-of-type(3) {
+  animation-delay: 750ms;
+}
+.menu__section__liste__shadow-holder + .menu__section__liste__shadow-holder:nth-of-type(4) {
+  animation-delay: 1000ms;
+}
+.menu__section__liste__shadow-holder__plat {
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+.menu__section__liste__shadow-holder__plat__nom {
   padding: 15px;
 }
-.menu__section__plat__infos__nom h3, .menu__section__plat__infos__nom p {
+.menu__section__liste__shadow-holder__plat__nom h3, .menu__section__liste__shadow-holder__plat__nom p {
   margin: 0;
 }
-.menu__section__plat__infos__nom h3 {
+.menu__section__liste__shadow-holder__plat__nom h3 {
   margin-bottom: 10px;
 }
-.menu__section__plat__infos__prix {
+.menu__section__liste__shadow-holder__plat .animated {
+  display: flex;
+  position: relative;
+  right: -75px;
+  transition: transform 500ms ease-in-out;
+}
+.menu__section__liste__shadow-holder__plat .animated__prix {
   font-weight: bold;
   align-self: flex-end;
   margin: 0;
+  padding: 15px;
 }
-.menu__section__plat__select {
+.menu__section__liste__shadow-holder__plat .animated__select {
   display: flex;
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
-}
-.menu__section__plat__select .fa-check-circle {
   justify-content: center;
+  background-color: #99E2D0;
+  width: 75px;
+}
+.menu__section__liste__shadow-holder__plat .animated__select .fa-check-circle {
   align-self: center;
   color: white;
+  transition: transform 500ms ease-in-out;
+  transition-delay: 100ms;
+}
+.menu__section__liste__shadow-holder__plat :hover + .animated {
+  transform: translateX(-75px);
+}
+.menu__section__liste__shadow-holder__plat :hover + .animated .fa-check-circle {
+  transform: rotateZ(360deg);
 }
 
+@keyframes slide-up {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+}
 .bg_a_la_francaise {
   background-image: url(../images/a_la_francaise.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 50% 75px;
+}
+
+.bg_la_note_enchantee {
+  background-image: url(../images/la_note_enchantee.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 50% 75px;
+}
+
+.bg_la_palette_du_gout {
+  background-image: url(../images/la_palette_du_gout.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: 50% 75px;
+}
+
+.bg_le_delice_des_sens {
+  background-image: url(../images/le_delice_des_sens.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: 50% 75px;

@@ -55,9 +55,27 @@ h2 {
 }
 
 .menu {
-    &__a_la_francaise {
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         h2 {
             font-family: 'Shrikhand', sans-serif;
         }
+        .fa-heart {
+            -webkit-text-stroke: 1px #000;
+            -webkit-text-fill-color: transparent;
+            margin-right: 20px;
+            cursor: pointer;
+        }
     }
+}
+
+.soulignement {
+    border-bottom: 3px solid $colour-tertiary;
+    padding-bottom: 2px;
+}
+
+.new {
+    font-family: 'Roboto';
 }
