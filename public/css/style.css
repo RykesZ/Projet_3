@@ -6,7 +6,7 @@ body {
   justify-content: center;
   background-color: grey;
 }
-body .restaurants__liste__module {
+body .restaurants__liste a {
   width: 100%;
 }
 
@@ -18,7 +18,7 @@ body .restaurants__liste__module {
     flex-direction: column;
     align-content: center;
   }
-  body .restaurants__liste__module {
+  body .restaurants__liste a {
     width: 100%;
   }
 }
@@ -30,7 +30,7 @@ body .restaurants__liste__module {
     flex-direction: column;
     justify-content: center;
   }
-  body .restaurants__liste__module {
+  body .restaurants__liste a {
     width: 100%;
   }
 }
@@ -42,7 +42,7 @@ body .restaurants__liste__module {
     flex-direction: column;
     justify-content: center;
   }
-  body .restaurants__liste__module {
+  body .restaurants__liste a {
     width: 50%;
   }
 }
@@ -54,10 +54,15 @@ body .restaurants__liste__module {
     flex-direction: column;
     justify-content: center;
   }
-  body .restaurants__liste__module {
+  body .restaurants__liste a {
     width: 50%;
   }
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .explorer {
   display: flex;
   flex-direction: column;
@@ -239,6 +244,7 @@ button:focus {
   margin-bottom: 80px;
   width: 350px;
   align-self: center;
+  cursor: pointer;
 }
 
 .fonctionnement__bubble {
@@ -311,6 +317,8 @@ button:focus {
   background: none;
   width: 100%;
   height: 310px;
+  cursor: pointer;
+  z-index: 2;
 }
 .restaurants__liste__module .new {
   color: #1b6150;
@@ -372,22 +380,43 @@ button:focus {
   text-align: left;
   margin-top: 5px;
 }
+.restaurants__liste__module__bandeau__fav {
+  display: flex;
+  margin-right: 40px;
+}
 .restaurants__liste__module__bandeau__fav .fa-heart {
-  -webkit-text-stroke: 1px #000;
-  -webkit-text-fill-color: transparent;
+  position: absolute;
+  align-self: center;
   cursor: pointer;
 }
-.restaurants__liste__module__bandeau__fav .fa-heart:hover {
+.restaurants__liste__module__bandeau__fav .fa-heart__empty {
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
+  z-index: 4;
+}
+.restaurants__liste__module__bandeau__fav .fa-heart__filler {
+  transform: scale(0);
+  background: -moz-linear-gradient(bottom, #FF79DA 0%, #9356DC 90%);
+  background: -webkit-linear-gradient(bottom, #FF79DA 0%, #9356DC 90%);
+  background: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 3;
+}
+.restaurants__liste__module__bandeau__fav .fa-heart:hover + .fa-heart__filler {
   animation-name: heart-fill;
-  animation-duration: 1s;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
 }
 
 @keyframes heart-fill {
   0% {
-    -webkit-text-fill-color: transparent;
+    transform: scale(0);
   }
   100% {
-    -webkit-text-fill-color: slateblue;
+    transform: scale(1);
   }
 }
 header {
@@ -470,6 +499,36 @@ footer .links_footer .fa-utensils {
   border-radius: 50px 50px 0 0;
   padding: 20px;
 }
+.menu__text__fav {
+  display: flex;
+  margin-right: 50px;
+}
+.menu__text__fav .fa-heart {
+  position: absolute;
+  align-self: center;
+  cursor: pointer;
+}
+.menu__text__fav .fa-heart__empty {
+  -webkit-text-stroke: 1px #000;
+  -webkit-text-fill-color: transparent;
+  z-index: 4;
+}
+.menu__text__fav .fa-heart__filler {
+  transform: scale(0);
+  background: -moz-linear-gradient(bottom, #FF79DA 0%, #9356DC 90%);
+  background: -webkit-linear-gradient(bottom, #FF79DA 0%, #9356DC 90%);
+  background: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 3;
+}
+.menu__text__fav .fa-heart:hover + .fa-heart__filler {
+  animation-name: heart-fill;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
 .menu__section__liste {
   display: flex;
   flex-wrap: wrap;
@@ -507,6 +566,7 @@ footer .links_footer .fa-utensils {
   overflow: hidden;
   cursor: pointer;
   width: 100%;
+  z-index: 3;
 }
 .menu__section__liste__shadow-holder__plat__nom {
   padding: 15px;
@@ -522,6 +582,7 @@ footer .links_footer .fa-utensils {
   position: relative;
   right: -75px;
   transition: transform 500ms ease-in-out;
+  z-index: 2;
 }
 .menu__section__liste__shadow-holder__plat .animated__prix {
   font-weight: bold;

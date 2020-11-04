@@ -24,7 +24,7 @@
     <section class="explorer">
         <h2>Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="explorer__button">Explorer nos restaurants</button>
+        <a href="#restaurants"><button class="explorer__button">Explorer nos restaurants</button></a>
     </section>
 
     <section class="fonctionnement">
@@ -53,74 +53,87 @@
             <i class="fas fa-store fa-lg"></i>
             Dégustez au restaurant
         </button>
+        <a name="restaurants"></a>
     </section>
 
     <section class="restaurants">
         <h2>Restaurants</h2>
         <div class="restaurants__liste">
-            <button class="restaurants__liste__module restaurants__liste__module--palette">
-                <span class="new">Nouveau</span>
+            <a href="./public/pages/menu_la_palette_du_gout.html">
+                <button class="restaurants__liste__module restaurants__liste__module--palette">
+                        <span class="new">Nouveau</span>
 
-                <div class="restaurants__liste__module__background restaurants__liste__module__background--palette"></div>
+                        <div class="restaurants__liste__module__background restaurants__liste__module__background--palette"></div>
 
-                <div class="restaurants__liste__module__bandeau">
-                    <div class="restaurants__liste__module__bandeau__nom-loc">
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+                        <div class="restaurants__liste__module__bandeau">
+                            <div class="restaurants__liste__module__bandeau__nom-loc">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="restaurants__liste__module__bandeau__fav">
+                                <i class="fas fa-heart fa-2x fa-heart__empty"></i>
+                                <i class="fas fa-heart fa-2x fa-heart__filler"></i>
+                            </div>
+                        </div>
+
+
+                </button>
+            </a>
+
+            <a href="./public/pages/menu_la_note_enchantee.html">
+                <button class="restaurants__liste__module restaurants__liste__module--note">
+                    <span class="new">Nouveau</span>
+
+                    <div class="restaurants__liste__module__background restaurants__liste__module__background--note"></div>
+
+                    <div class="restaurants__liste__module__bandeau">
+                        <div class="restaurants__liste__module__bandeau__nom-loc">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="restaurants__liste__module__bandeau__fav">
+                            <i class="fas fa-heart fa-2x fa-heart__empty"></i>
+                            <i class="fas fa-heart fa-2x fa-heart__filler"></i>
+                        </div>
                     </div>
-                    <div class="restaurants__liste__module__bandeau__fav">
-                        <i class="fas fa-heart fa-2x"></i>
+                </button>
+            </a>
+
+            <a href="./public/pages/menu_a_la_francaise.html">
+                <button class="restaurants__liste__module restaurants__liste__module--francaise">
+
+                    <div class="restaurants__liste__module__background restaurants__liste__module__background--francaise"></div>
+
+                    <div class="restaurants__liste__module__bandeau">
+                        <div class="restaurants__liste__module__bandeau__nom-loc">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div>
+                        <div class="restaurants__liste__module__bandeau__fav">
+                            <i class="fas fa-heart fa-2x fa-heart__empty"></i>
+                            <i class="fas fa-heart fa-2x fa-heart__filler"></i>
+                        </div>
                     </div>
-                </div>
+                </button>
+            </a>
 
+            <a href="./public/pages/menu_le_delice_des_sens.html">
+                <button class="restaurants__liste__module restaurants__liste__module--delice">
 
-            </button>
+                    <div class="restaurants__liste__module__background restaurants__liste__module__background--delice"></div>
 
-            <button class="restaurants__liste__module restaurants__liste__module--note">
-                <span class="new">Nouveau</span>
-
-                <div class="restaurants__liste__module__background restaurants__liste__module__background--note"></div>
-
-                <div class="restaurants__liste__module__bandeau">
-                    <div class="restaurants__liste__module__bandeau__nom-loc">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                    <div class="restaurants__liste__module__bandeau">
+                        <div class="restaurants__liste__module__bandeau__nom-loc">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie Méricourt</p>
+                        </div>
+                        <div class="restaurants__liste__module__bandeau__fav">
+                            <i class="fas fa-heart fa-2x fa-heart__empty"></i>
+                            <i class="fas fa-heart fa-2x fa-heart__filler"></i>
+                        </div>
                     </div>
-                    <div class="restaurants__liste__module__bandeau__fav">
-                        <i class="fas fa-heart fa-2x"></i>
-                    </div>
-                </div>
-            </button>
-
-            <button class="restaurants__liste__module restaurants__liste__module--francaise">
-
-                <div class="restaurants__liste__module__background restaurants__liste__module__background--francaise"></div>
-
-                <div class="restaurants__liste__module__bandeau">
-                    <div class="restaurants__liste__module__bandeau__nom-loc">
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                    <div class="restaurants__liste__module__bandeau__fav">
-                        <i class="fas fa-heart fa-2x"></i>
-                    </div>
-                </div>
-            </button>
-
-            <button class="restaurants__liste__module restaurants__liste__module--delice">
-
-                <div class="restaurants__liste__module__background restaurants__liste__module__background--delice"></div>
-
-                <div class="restaurants__liste__module__bandeau">
-                    <div class="restaurants__liste__module__bandeau__nom-loc">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie Méricourt</p>
-                    </div>
-                    <div class="restaurants__liste__module__bandeau__fav">
-                        <i class="fas fa-heart fa-2x"></i>
-                    </div>
-                </div>
-            </button>
+                </button>
+            </a>
         </div>
     </section>
     <footer>
@@ -134,7 +147,7 @@
             <p>Devenir partenaire</p>
         </div>
         <p>Mentions légales</p>
-        <p>Contact</p>
+        <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
     </footer>
 
 

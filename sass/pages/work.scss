@@ -3,6 +3,38 @@
     background-color: #f7f7f7;
     border-radius: 50px 50px 0 0;
     padding: 20px;
+    &__text {
+        &__fav {
+            display: flex;
+            margin-right: 50px;
+            .fa-heart {
+                position: absolute;
+                align-self: center;
+                cursor: pointer;
+                &__empty {
+                    -webkit-text-stroke: 1px #000;
+                    -webkit-text-fill-color: transparent;
+                    z-index: 4;
+                }
+                &__filler {
+                    transform: scale(0);
+                    background: -moz-linear-gradient(bottom, $colour-secondary 0%, $colour-primary 90%); 
+                    background: -webkit-linear-gradient(bottom,$colour-secondary 0%, $colour-primary 90%); 
+                    background: linear-gradient(to top,$colour-secondary 0%, $colour-primary 90%);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+                   -webkit-text-fill-color:transparent;
+                   z-index: 3;
+                }
+                &:hover + .fa-heart__filler {
+                    animation-name: heart-fill;
+                    animation-duration: 500ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
     &__section {
         &__liste {
             display: flex;
@@ -34,6 +66,7 @@
                     overflow: hidden;
                     cursor: pointer;
                     width: 100%;
+                    z-index: 3;
                     &__nom {
                         padding: 15px;
                         h3, p {
@@ -48,6 +81,7 @@
                         position: relative;
                         right: -75px;
                         transition: transform 500ms ease-in-out;
+                        z-index: 2;
                         &__prix {
                             font-weight: bold;
                             align-self: flex-end;

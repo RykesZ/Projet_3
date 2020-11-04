@@ -7,13 +7,12 @@ body {
     background-color: grey;
     .restaurants {
         &__liste {
-            &__module {
+            a {
                 width: 100%;
             }
         }
     }
 }
-
 
 @media screen and (min-width: map-get($breakpoints, mobile)) {
     body {
@@ -24,7 +23,7 @@ body {
         align-content: center;
         .restaurants {
             &__liste {
-                &__module {
+                a {
                     width: 100%;
                 }
             }
@@ -42,7 +41,7 @@ body {
         justify-content: center;
         .restaurants {
             &__liste {
-                &__module {
+                a {
                     width: 100%;
                 }
             }
@@ -59,7 +58,7 @@ body {
         justify-content: center;
         .restaurants {
             &__liste {
-                &__module {
+                a {
                     width: 50%;
                 }
             }
@@ -76,12 +75,17 @@ body {
         justify-content: center;
         .restaurants {
             &__liste {
-                &__module {
+                a {
                     width: 50%;
                 }
             }
         }
     }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .explorer {
