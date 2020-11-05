@@ -7,7 +7,7 @@ button:focus {outline:0;}
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 1.6em;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 8px 16px 0 nth($black-shadow-colours, 1), 0 6px 20px 0 nth($black-shadow-colours, 2);
         background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
         color: white;
         font-family: 'Roboto';
@@ -17,6 +17,21 @@ button:focus {outline:0;}
         width: 350px;
         align-self: center;
         cursor: pointer;
+        :hover {
+            box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 50%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 50%);
+            animation-name: animate-gradient;
+            animation-duration: 500ms;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+@keyframes animate-gradient {
+    0% {
+        background-image: linear-gradient(355deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    100% {
+        background-image: linear-gradient(355deg, $colour-secondary 0%, $colour-primary 70%);
     }
 }
 
@@ -32,7 +47,7 @@ button:focus {outline:0;}
         padding: 35px;
         padding-top: 35px;
         padding-bottom: 35px;
-        box-shadow: 0 4px 8px 0 rgba(39,39,39,0.2), 0 3px 10px 0 rgba(39,39,39,0.19);
+        box-shadow: 0 4px 8px 0 nth($dark-shadow-colours, 1), 0 3px 10px 0 nth($dark-shadow-colours, 2);
         font-size: 1.7em;
         font-family: 'Roboto-Bold';
         display: flex;
@@ -93,7 +108,10 @@ button:focus {outline:0;}
             width: 100%;
             height: 310px;
             cursor: pointer;
-            z-index: 2;
+            z-index: 3;
+            :hover + &__bandeau {
+                box-shadow: 0 4px 8px 0 darken(nth($dark-shadow-colours, 1), 15%), 0 3px 10px 0 darken(nth($dark-shadow-colours, 2), 15%);
+            }
             .new {
                 @include colour-variation;
                 font-weight: bold;
@@ -141,7 +159,7 @@ button:focus {outline:0;}
                 align-items: center;
                 padding: 20px;
                 box-sizing: border-box;
-                box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39,39,39,0.19);
+                box-shadow: 0 4px 8px 0 nth($dark-shadow-colours, 1), 0 3px 10px 0 nth($dark-shadow-colours, 2);
                 &__nom-loc {
                     flex: 1;
                     h3 {
@@ -168,7 +186,7 @@ button:focus {outline:0;}
                         &__empty {
                             -webkit-text-stroke: 1px #000;
                             -webkit-text-fill-color: transparent;
-                            z-index: 4;
+                            z-index: 5;
                         }
                         &__filler {
                             transform: scale(0);
@@ -179,7 +197,7 @@ button:focus {outline:0;}
                             -moz-background-clip: text;
                             background-clip: text;
                            -webkit-text-fill-color:transparent;
-                           z-index: 3;
+                           z-index: 4;
                         }
                         &:hover + .fa-heart__filler {
                             animation-name: heart-fill;

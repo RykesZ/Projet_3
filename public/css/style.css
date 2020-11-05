@@ -111,7 +111,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: moccasin;
+  background-color: #c1ede2;
   z-index: 1000;
   margin: 0;
   animation-name: disappearing;
@@ -235,7 +235,7 @@ button:focus {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.6em;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
   background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
   color: white;
   font-family: "Roboto";
@@ -246,7 +246,21 @@ button:focus {
   align-self: center;
   cursor: pointer;
 }
+.explorer__button :hover {
+  box-shadow: 0 8px 16px 0 rgba(43, 43, 43, 0.5), 0 6px 20px 0 rgba(53, 53, 53, 0.5);
+  animation-name: animate-gradient;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
 
+@keyframes animate-gradient {
+  0% {
+    background-image: linear-gradient(355deg, #FF79DA 0%, #9356DC 70%);
+  }
+  100% {
+    background-image: linear-gradient(355deg, #FF79DA 0%, #9356DC 70%);
+  }
+}
 .fonctionnement__bubble {
   border: hidden;
   background-color: #f0f0f0;
@@ -258,7 +272,7 @@ button:focus {
   padding: 35px;
   padding-top: 35px;
   padding-bottom: 35px;
-  box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39, 39, 39, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.5), 0 3px 10px 0 rgba(220, 220, 220, 0.5);
   font-size: 1.7em;
   font-family: "Roboto-Bold";
   display: flex;
@@ -318,7 +332,10 @@ button:focus {
   width: 100%;
   height: 310px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
+}
+:hover + .restaurants__liste__module__bandeau {
+  box-shadow: 0 4px 8px 0 rgba(172, 172, 172, 0.5), 0 3px 10px 0 rgba(182, 182, 182, 0.5);
 }
 .restaurants__liste__module .new {
   color: #1b6150;
@@ -362,7 +379,7 @@ button:focus {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2), 0 3px 10px 0 rgba(39, 39, 39, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.5), 0 3px 10px 0 rgba(220, 220, 220, 0.5);
 }
 .restaurants__liste__module__bandeau__nom-loc {
   flex: 1;
@@ -392,7 +409,7 @@ button:focus {
 .restaurants__liste__module__bandeau__fav .fa-heart__empty {
   -webkit-text-stroke: 1px #000;
   -webkit-text-fill-color: transparent;
-  z-index: 4;
+  z-index: 5;
 }
 .restaurants__liste__module__bandeau__fav .fa-heart__filler {
   transform: scale(0);
@@ -403,7 +420,7 @@ button:focus {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  z-index: 3;
+  z-index: 4;
 }
 .restaurants__liste__module__bandeau__fav .fa-heart:hover + .fa-heart__filler {
   animation-name: heart-fill;
@@ -534,7 +551,7 @@ footer .links_footer .fa-utensils {
   flex-wrap: wrap;
 }
 .menu__section__liste__shadow-holder {
-  box-shadow: 1px 4px 8px 1px rgba(173, 173, 173, 0.2), 2px 6px 20px 2px rgba(136, 136, 136, 0.19);
+  box-shadow: 1px 4px 8px 1px rgba(220, 220, 220, 0.5), 2px 6px 20px 2px rgba(230, 230, 230, 0.5);
   border-radius: 20px 20px 20px 20px;
   margin-bottom: 20px;
   margin-right: 20px;
