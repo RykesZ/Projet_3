@@ -246,10 +246,10 @@ button:focus {
   align-self: center;
   cursor: pointer;
 }
-.explorer__button :hover {
+.explorer__button:hover {
   box-shadow: 0 8px 16px 0 rgba(43, 43, 43, 0.5), 0 6px 20px 0 rgba(53, 53, 53, 0.5);
   animation-name: animate-gradient;
-  animation-duration: 500ms;
+  animation-duration: 1000ms;
   animation-fill-mode: both;
 }
 
@@ -334,7 +334,7 @@ button:focus {
   cursor: pointer;
   z-index: 3;
 }
-:hover + .restaurants__liste__module__bandeau {
+.restaurants__liste__module:hover .restaurants__liste__module__bandeau {
   box-shadow: 0 4px 8px 0 rgba(172, 172, 172, 0.5), 0 3px 10px 0 rgba(182, 182, 182, 0.5);
 }
 .restaurants__liste__module .new {
@@ -581,12 +581,14 @@ footer .links_footer .fa-utensils {
   background-color: #ffffff;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
+  height: 100%;
   cursor: pointer;
-  width: 100%;
   z-index: 3;
 }
 .menu__section__liste__shadow-holder__plat__nom {
+  text-overflow: ellipsis;
   padding: 15px;
+  width: 175px;
 }
 .menu__section__liste__shadow-holder__plat__nom h3, .menu__section__liste__shadow-holder__plat__nom p {
   margin: 0;
@@ -604,8 +606,10 @@ footer .links_footer .fa-utensils {
 .menu__section__liste__shadow-holder__plat .animated__prix {
   font-weight: bold;
   align-self: flex-end;
+  text-align: right;
   margin: 0;
   padding: 15px;
+  width: 40px;
 }
 .menu__section__liste__shadow-holder__plat .animated__select {
   display: flex;

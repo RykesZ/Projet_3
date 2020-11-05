@@ -17,10 +17,10 @@ button:focus {outline:0;}
         width: 350px;
         align-self: center;
         cursor: pointer;
-        :hover {
+        &:hover {
             box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 50%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 50%);
             animation-name: animate-gradient;
-            animation-duration: 500ms;
+            animation-duration: 1000ms;
             animation-fill-mode: both;
         }
     }
@@ -109,7 +109,7 @@ button:focus {outline:0;}
             height: 310px;
             cursor: pointer;
             z-index: 3;
-            :hover + &__bandeau {
+            &:hover &__bandeau {
                 box-shadow: 0 4px 8px 0 darken(nth($dark-shadow-colours, 1), 15%), 0 3px 10px 0 darken(nth($dark-shadow-colours, 2), 15%);
             }
             .new {
