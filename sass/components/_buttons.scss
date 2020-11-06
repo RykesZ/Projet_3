@@ -18,20 +18,48 @@ button:focus {outline:0;}
         align-self: center;
         cursor: pointer;
         &:hover {
-            box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 50%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 50%);
+            box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 20%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 20%);
             animation-name: animate-gradient;
-            animation-duration: 1000ms;
+            animation-duration: 200ms;
             animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
         }
     }
 }
 
 @keyframes animate-gradient {
     0% {
+        background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    10% {
+        background-image: linear-gradient(220deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    20% {
+        background-image: linear-gradient(265deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    30% {
+        background-image: linear-gradient(310deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    40% {
         background-image: linear-gradient(355deg, $colour-secondary 0%, $colour-primary 70%);
     }
+    50% {
+        background-image: linear-gradient(400deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    60% {
+        background-image: linear-gradient(445deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    70% {
+        background-image: linear-gradient(490deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    80% {
+        background-image: linear-gradient(535deg, $colour-secondary 0%, $colour-primary 70%);
+    }
+    90% {
+        background-image: linear-gradient(580deg, $colour-secondary 0%, $colour-primary 70%);
+    }
     100% {
-        background-image: linear-gradient(355deg, $colour-secondary 0%, $colour-primary 70%);
+        background-image: linear-gradient(625deg, $colour-secondary 0%, $colour-primary 70%);
     }
 }
 
@@ -217,5 +245,36 @@ button:focus {outline:0;}
     }
     100% {
         transform: scale(1);
+    }
+}
+
+.commande {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    &__button {
+        border-radius: 50px;
+        padding: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1.6em;
+        box-shadow: 0 8px 16px 0 nth($black-shadow-colours, 1), 0 6px 20px 0 nth($black-shadow-colours, 2);
+        background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
+        color: white;
+        font-family: 'Roboto';
+        font-weight: 700;
+        border: none;
+        margin-bottom: 80px;
+        width: 350px;
+        align-self: center;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 20%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 20%);
+            animation-name: animate-gradient;
+            animation-duration: 200ms;
+            animation-fill-mode: both;
+        }
     }
 }

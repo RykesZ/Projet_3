@@ -66,12 +66,12 @@
                     border-radius: 20px 20px 20px 20px;
                     overflow: hidden;
                     height: 100%;
-                    width: 330px;
+                    width: 370px;
                     cursor: pointer;
                     z-index: 3;
                     &__nom {
                         padding: 15px;
-                        width: 300px;
+                        width: 320px;
                         h3, p {
                             overflow: hidden;
                             white-space: nowrap;
@@ -123,29 +123,6 @@
                     }
                 }
             }
-        }
-    }
-    &__button {
-        border-radius: 50px;
-        padding: 35px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 1.6em;
-        box-shadow: 0 8px 16px 0 nth($black-shadow-colours, 1), 0 6px 20px 0 nth($black-shadow-colours, 2);
-        background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
-        color: white;
-        font-family: 'Roboto';
-        font-weight: 700;
-        border: none;
-        margin-bottom: 80px;
-        width: 350px;
-        align-self: center;
-        cursor: pointer;
-        &:hover {
-            box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 50%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 50%);
-            animation-name: animate-gradient;
-            animation-duration: 1000ms;
-            animation-fill-mode: both;
         }
     }
 }
