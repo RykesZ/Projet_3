@@ -1,7 +1,10 @@
 footer {
     background-color: #353535;
     padding: 30px;
-    justify-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     .logo_footer {
         margin: 0;
         margin-bottom: 20px;

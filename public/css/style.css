@@ -10,7 +10,7 @@ body .restaurants__liste a {
   width: 100%;
 }
 
-@media screen and (min-width: 655px) {
+@media screen and (min-width: 981px) {
   body {
     margin-right: 96px;
     margin-left: 96px;
@@ -22,7 +22,7 @@ body .restaurants__liste a {
     width: 100%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   body {
     margin-right: 208px;
     margin-left: 208px;
@@ -34,7 +34,7 @@ body .restaurants__liste a {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1450px) {
   body {
     margin-right: 312px;
     margin-left: 312px;
@@ -46,7 +46,7 @@ body .restaurants__liste a {
     width: 50%;
   }
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1680px) {
   body {
     margin-right: 408px;
     margin-left: 408px;
@@ -539,7 +539,10 @@ header {
 footer {
   background-color: #353535;
   padding: 30px;
-  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 footer .logo_footer {
   margin: 0;
