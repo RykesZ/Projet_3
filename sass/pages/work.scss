@@ -6,6 +6,7 @@
     padding: 20px;
     padding-left: 60px;
     padding-right: 60px;
+    user-select: none;
     &__text {
         margin-top: 10px;
         &__fav {
@@ -43,6 +44,7 @@
         &__liste {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             &__shadow-holder {
                 box-shadow: 1px 4px 8px 1px nth($light-shadow-colours, 1), 2px 6px 20px 2px nth($light-shadow-colours, 2);
                 border-radius: 40px 40px 40px 40px;
@@ -175,8 +177,8 @@
     background-image: url(../images/a_la_francaise.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 75px;
-    height: 110%;
+    background-position: 50% 152px;
+    background-size: 100%;
 }
 
 .bg_la_note_enchantee {
@@ -184,8 +186,8 @@
     background-image: url(../images/la_note_enchantee.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 75px;
-    height: 110%;
+    background-position: 50% -103px;
+    background-size: 100%;
 }
 
 .bg_la_palette_du_gout {
@@ -193,8 +195,8 @@
     background-image: url(../images/la_palette_du_gout.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 180px;
-    height: 110%;
+    background-position: 50% 150px;
+    background-size: 109%;
 }
 
 .bg_le_delice_des_sens {
@@ -202,6 +204,6 @@
     background-image: url(../images/le_delice_des_sens.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 75px;
-    height: 110%;
+    background-position: 50% 152px;
+    background-size: 100%;
 }

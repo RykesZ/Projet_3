@@ -1,16 +1,17 @@
 /*Is read "Beyond this many px, screen is out of this format" Ex: "Beyond 576px, screen is out of mobile"*/
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: grey;
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+  }
+  body .restaurants__liste a {
+    width: 100%;
+  }
 }
-body .restaurants__liste a {
-  width: 100%;
-}
-
-@media screen and (min-width: 981px) {
+@media screen and (min-width: 481px) {
   .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
     background-size: cover;
   }
@@ -26,7 +27,7 @@ body .restaurants__liste a {
     width: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
     background-size: cover;
   }
@@ -42,7 +43,7 @@ body .restaurants__liste a {
     width: 100%;
   }
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1025px) {
   .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
     background-size: cover;
   }
@@ -58,7 +59,7 @@ body .restaurants__liste a {
     width: 50%;
   }
 }
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1201px) {
   .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
     background-size: cover;
   }
@@ -279,7 +280,7 @@ button:focus {
 }
 .explorer__button:hover {
   box-shadow: 0 8px 16px 0 rgba(119, 119, 119, 0.5), 0 6px 20px 0 rgba(129, 129, 129, 0.5);
-  animation-name: animate-gradient;
+  animation-name: lighten-button;
   animation-duration: 200ms;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
@@ -318,6 +319,14 @@ button:focus {
   }
   100% {
     background-image: linear-gradient(625deg, #FF79DA 0%, #9356DC 70%);
+  }
+}
+@keyframes lighten-button {
+  0% {
+    background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
+  }
+  100% {
+    background-image: linear-gradient(175deg, #fface8 0%, #ae80e5 70%);
   }
 }
 .fonctionnement__bubble {
@@ -412,7 +421,7 @@ button:focus {
   box-shadow: 0 4px 8px 0 rgba(172, 172, 172, 0.5), 0 3px 10px 0 rgba(182, 182, 182, 0.5);
 }
 .restaurants__liste__module .new {
-  color: #1b6150;
+  color: #278870;
   font-weight: bold;
   background-color: #99E2D0;
   padding: 15px 30px 15px 30px;
@@ -538,7 +547,7 @@ button:focus {
 }
 .commande__button:hover {
   box-shadow: 0 8px 16px 0 rgba(119, 119, 119, 0.5), 0 6px 20px 0 rgba(129, 129, 129, 0.5);
-  animation-name: animate-gradient;
+  animation-name: lighten-button;
   animation-duration: 200ms;
   animation-fill-mode: both;
 }
@@ -638,6 +647,7 @@ footer .links_footer .fa-utensils {
   padding: 20px;
   padding-left: 60px;
   padding-right: 60px;
+  user-select: none;
 }
 .menu__text {
   margin-top: 10px;
@@ -675,6 +685,7 @@ footer .links_footer .fa-utensils {
 .menu__section__liste {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .menu__section__liste__shadow-holder {
   box-shadow: 1px 4px 8px 1px rgba(220, 220, 220, 0.5), 2px 6px 20px 2px rgba(230, 230, 230, 0.5);
@@ -808,8 +819,8 @@ footer .links_footer .fa-utensils {
   background-image: url(../images/a_la_francaise.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 75px;
-  height: 110%;
+  background-position: 50% 152px;
+  background-size: 100%;
 }
 
 .bg_la_note_enchantee {
@@ -817,8 +828,8 @@ footer .links_footer .fa-utensils {
   background-image: url(../images/la_note_enchantee.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 75px;
-  height: 110%;
+  background-position: 50% -103px;
+  background-size: 100%;
 }
 
 .bg_la_palette_du_gout {
@@ -826,8 +837,8 @@ footer .links_footer .fa-utensils {
   background-image: url(../images/la_palette_du_gout.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 180px;
-  height: 110%;
+  background-position: 50% 150px;
+  background-size: 109%;
 }
 
 .bg_le_delice_des_sens {
@@ -835,8 +846,8 @@ footer .links_footer .fa-utensils {
   background-image: url(../images/le_delice_des_sens.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 75px;
-  height: 110%;
+  background-position: 50% 152px;
+  background-size: 100%;
 }
 
 /* {
