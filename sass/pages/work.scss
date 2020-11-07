@@ -1,18 +1,22 @@
 .menu {
-    margin-top: 380px;
-    background-color: #f7f7f7;
-    border-radius: 50px 50px 0 0;
+    margin-top: 700px;
+    margin-bottom: 0;
+    background-color: #e6e6e6;
+    border-radius: 100px 100px 0 0;
     padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     &__text {
+        margin-top: 10px;
         &__fav {
             display: flex;
-            margin-right: 50px;
+            margin-right: 100px;
             .fa-heart {
                 position: absolute;
                 align-self: center;
                 cursor: pointer;
                 &__empty {
-                    -webkit-text-stroke: 1px #000;
+                    -webkit-text-stroke: 3px #000;
                     -webkit-text-fill-color: transparent;
                     z-index: 4;
                 }
@@ -41,12 +45,13 @@
             flex-wrap: wrap;
             &__shadow-holder {
                 box-shadow: 1px 4px 8px 1px nth($light-shadow-colours, 1), 2px 6px 20px 2px nth($light-shadow-colours, 2);
-                border-radius: 20px 20px 20px 20px;
-                margin-bottom: 20px;
+                border-radius: 40px 40px 40px 40px;
+                margin-bottom: 35px;
                 margin-right: 20px;
                 position: relative;
-                top: 50px;
-                height: 82px;
+                top: 70px;
+                min-height: 180px;
+                max-height: 250px;
                 opacity: 1;
                 transform: translateY(-50px);
                 animation-name: slide-up;
@@ -62,16 +67,17 @@
                 &__plat {
                     display: flex;
                     position: relative;
-                    background-color: #ffffff;
-                    border-radius: 20px 20px 20px 20px;
+                    background-color: #f3f3f3;
+                    border-radius: 40px 40px 40px 40px;
                     overflow: hidden;
                     height: 100%;
-                    width: 370px;
+                    width: 860px;
                     cursor: pointer;
                     z-index: 3;
                     &__nom {
-                        padding: 15px;
-                        width: 320px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        width: 710px;
                         h3, p {
                             overflow: hidden;
                             white-space: nowrap;
@@ -79,14 +85,20 @@
                             margin: 0;
                         }
                         h3 {
+                            margin-top: 30px;
                             margin-bottom: 10px;
+                            font-size: 3em;
+                        }
+                        p {
+                            font-size: 2.4em;
+                            margin-bottom: 30px;
                         }
                     }
                     .animated {
                         display: flex;
                         position: absolute;
-                        height: 82px;
-                        right: -75px;
+                        height: 100%;
+                        right: -150px;
                         transition: transform 500ms ease-in-out;
                         z-index: 2;
                         &__prix {
@@ -94,14 +106,16 @@
                             align-self: flex-end;
                             text-align: right;
                             margin: 0;
-                            padding: 15px;
+                            padding-right: 70px;
+                            padding-bottom: 30px;
                             width: 40px;
+                            font-size: 2.4em;
                         }
                         &__select {
                             display: flex;
                             justify-content: center;
                             background-color: $colour-tertiary;
-                            width: 75px;
+                            width: 150px;
                             .fa-check-circle {
                                 align-self: center;
                                 color: white;
@@ -111,7 +125,7 @@
                         }
                     }
                     &:hover .animated {
-                        transform: translateX(-75px);
+                        transform: translateX(-150px);
                         & .fa-check-circle {
                             transform: rotateZ(360deg);
                         }
@@ -140,49 +154,53 @@
 
 @keyframes ellipsis {
     0% {
-        width: 300px;
+        width: 710px;
     }
     25% {
-        width: 272.5px;
+        width: 672.5px;
     }
     50% {
-        width: 245px;
+        width: 635px;
     }
     75% {
-        width: 217.5px;
+        width: 597.5px;
     }
     100% {
-        width: 190px;
+        width: 560px;
     }
 }
 
 .bg_a_la_francaise {
+    display: flex;
     background-image: url(../images/a_la_francaise.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 75px;
     height: 110%;
 }
 
 .bg_la_note_enchantee {
+    display: flex;
     background-image: url(../images/la_note_enchantee.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 75px;
     height: 110%;
 }
 
 .bg_la_palette_du_gout {
+    display: flex;
     background-image: url(../images/la_palette_du_gout.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 50% 75px;
+    background-position: 50% 180px;
     height: 110%;
 }
 
 .bg_le_delice_des_sens {
+    display: flex;
     background-image: url(../images/le_delice_des_sens.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 75px;
     height: 110%;

@@ -15,6 +15,9 @@ body {
 }
 
 @media screen and (min-width: map-get($breakpoints, mobile)) {
+    .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
+        background-size: cover;
+    }
     body {
         margin-right: 96px;
         margin-left: 96px;
@@ -33,6 +36,9 @@ body {
 }
 
 @media screen and (min-width: map-get($breakpoints, screen-md)) {
+    .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
+        background-size: cover;
+    }
     body {
         margin-right: 208px;
         margin-left: 208px;
@@ -50,6 +56,9 @@ body {
 }
 
 @media screen and (min-width: map-get($breakpoints, screen-lg)) {
+    .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
+        background-size: cover;
+    }
     body {
         margin-right: 312px;
         margin-left: 312px;
@@ -67,6 +76,9 @@ body {
 }
 
 @media screen and (min-width: map-get($breakpoints, screen-xl)) {
+    .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
+        background-size: cover;
+    }
     body {
         margin-right: 408px;
         margin-left: 408px;
@@ -91,19 +103,21 @@ a {
 .explorer {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-content: center;
+    justify-content: center;
     background-color: #f0f0f0;
     h2, p {
         text-align: center;
+        word-break: break-word;
     }
     h2 {
-        margin-left: $margin-h2-explorer;
-        margin-right: $margin-h2-explorer;
-        margin-top: 50px;
+        margin-top: 90px;
+        margin-left: 120px;
+        margin-right: 120px;
     }
     p {
-        margin-left: $margin-p-explorer;
-        margin-right: $margin-p-explorer;
+        margin-left: 60px;
+        margin-right: 60px;
     }
 }
 
@@ -111,22 +125,13 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    margin-bottom: 200px;
+    padding-bottom: 700px;
     background-color: white;
     margin: 0;
-    h2 {
-        margin-left: 20px;;
-    }
-}
-
-.restaurants {
-    display: flex;
-    flex-direction: column;
-    background-color: #f7f7f7;
-    margin: 0;
-    padding-bottom: 70px;
+    padding-left: 35px;
     h2 {
         margin-left: 20px;
+        margin-bottom: 50px;
     }
 }
 

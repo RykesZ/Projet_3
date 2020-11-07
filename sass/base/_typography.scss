@@ -16,6 +16,7 @@
 header {
     h1 {
         font-family: 'Shrikhand', sans-serif;
+        font-size: 4.3em;
     }
     
 }
@@ -43,24 +44,48 @@ h2 {
 
 .localisation {
     &__ville {
-        font-size: 1.5em;
+        font-size: 3em;
         font-weight: bold;
     }
 }
 
 .explorer {
     p {
-        font-size: 1.7em;
+        font-size: 3em;
+    }
+    &__button {
+        font-family: 'Roboto-Bold';
+    }
+}
+
+.fonctionnement {
+    &__bubble {
+        .number {
+        font-family: 'Roboto';
+        font-size: 1em;
+        }
+    }
+}
+
+.restaurants {
+    h2 {
+        font-size: 4.5em;
     }
 }
 
 .menu {
+    &__section {
+        &__nom {
+            font-size: 2.6em;
+        }
+    }
     &__text {
         display: flex;
         align-items: center;
         justify-content: space-between;
         h2 {
             font-family: 'Shrikhand', sans-serif;
+            font-size: 4.4em;
         }
         .fa-heart {
             -webkit-text-stroke: 1px #000;
@@ -72,8 +97,8 @@ h2 {
 }
 
 .soulignement {
-    border-bottom: 3px solid $colour-tertiary;
-    padding-bottom: 2px;
+    border-bottom: 8px solid $colour-tertiary;
+    padding-bottom: 15px;
 }
 
 .new {

@@ -5,7 +5,7 @@ header {
     width: 100%;
     z-index: 500;
     background-color: white;
-    height: 80px;
+    height: 150px;
     top: 0;
     left: 0;
     align-items: center;
@@ -18,10 +18,10 @@ header {
     position: fixed;
     width: 100%;
     z-index: 501;
-    height: 80px;
+    height: 150px;
     top: 0;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 60px;
     a {
         text-decoration: none;
         color: black;
@@ -34,9 +34,9 @@ header {
     justify-content: center;
     text-align: center;
     background-color: $bg-colour-localisation;
-    margin-top: 80px;
+    margin-top: 150px;
     &__ville {
-        margin: 20px;
+        margin: 35px;
     }
 }
 
