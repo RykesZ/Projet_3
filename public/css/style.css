@@ -10,10 +10,15 @@
   body .restaurants__liste a {
     width: 100%;
   }
+
+  .bg_la_palette_du_gout {
+    background-position: 50% 155px;
+    background-size: contain;
+  }
 }
 @media screen and (min-width: 481px) {
   .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
-    background-size: cover;
+    background-size: 210%;
   }
 
   body {
@@ -23,7 +28,13 @@
     align-content: center;
   }
   body header h1 {
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+  body #Retour {
+    padding-left: 40px;
+  }
+  body #Retour .fa-arrow-left {
+    font-size: 3em;
   }
   body .localisation__ville {
     font-size: 2em;
@@ -97,15 +108,26 @@
   body .restaurants__liste__module__bandeau__nom-loc p {
     font-size: 2.75em;
   }
+  body .bg_la_palette_du_gout .menu__text h2 {
+    font-size: 2.5em;
+  }
+  body .bg_la_palette_du_gout .menu__text__fav {
+    margin-right: 55px;
+  }
+  body .bg_la_palette_du_gout .menu__text__fav .fa-heart {
+    font-size: 3em;
+  }
+  body .bg_la_palette_du_gout .menu__section__liste__shadow-holder__plat {
+    width: 450px;
+  }
+  body .bg_la_palette_du_gout .menu__section__liste__shadow-holder__plat__nom {
+    width: 420px;
+  }
   body footer {
     font-size: 0.75em;
   }
 }
 @media screen and (min-width: 769px) {
-  .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
-    background-size: cover;
-  }
-
   body {
     margin: 0;
     display: flex;
@@ -209,10 +231,6 @@
   }
 }
 @media screen and (min-width: 1025px) {
-  .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
-    background-size: cover;
-  }
-
   body {
     margin: 0;
     display: flex;
@@ -328,10 +346,6 @@
   }
 }
 @media screen and (min-width: 1201px) {
-  .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
-    background-size: cover;
-  }
-
   body {
     margin: 0;
     display: flex;
@@ -1201,37 +1215,28 @@ footer .links_footer .fa-utensils {
 .bg_a_la_francaise {
   display: flex;
   background-image: url(../images/a_la_francaise.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 152px;
-  background-size: 100%;
 }
 
 .bg_la_note_enchantee {
   display: flex;
   background-image: url(../images/la_note_enchantee.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% -103px;
-  background-size: 100%;
 }
 
 .bg_la_palette_du_gout {
   display: flex;
   background-image: url(../images/la_palette_du_gout.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: 50% 150px;
-  background-size: 109%;
 }
 
 .bg_le_delice_des_sens {
   display: flex;
   background-image: url(../images/le_delice_des_sens.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 152px;
-  background-size: 100%;
 }
 
 /* {
