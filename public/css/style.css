@@ -10,11 +10,6 @@
   body .restaurants__liste a {
     width: 100%;
   }
-
-  .bg_la_palette_du_gout {
-    background-position: 50% 155px;
-    background-size: contain;
-  }
 }
 @media screen and (min-width: 481px) {
   .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
@@ -108,19 +103,19 @@
   body .restaurants__liste__module__bandeau__nom-loc p {
     font-size: 2.75em;
   }
-  body .bg_la_palette_du_gout .menu__text h2 {
+  body .menu__text h2 {
     font-size: 2.5em;
   }
-  body .bg_la_palette_du_gout .menu__text__fav {
+  body .menu__text__fav {
     margin-right: 55px;
   }
-  body .bg_la_palette_du_gout .menu__text__fav .fa-heart {
+  body .menu__text__fav .fa-heart {
     font-size: 3em;
   }
-  body .bg_la_palette_du_gout .menu__section__liste__shadow-holder__plat {
+  body .menu__section__liste__shadow-holder__plat {
     width: 450px;
   }
-  body .bg_la_palette_du_gout .menu__section__liste__shadow-holder__plat__nom {
+  body .menu__section__liste__shadow-holder__plat__nom {
     width: 420px;
   }
   body footer {
@@ -1090,6 +1085,7 @@ footer .links_footer .fa-utensils {
   border-radius: 40px 40px 40px 40px;
   margin-bottom: 35px;
   margin-right: 20px;
+  margin-left: 20px;
   position: relative;
   top: 70px;
   min-height: 180px;

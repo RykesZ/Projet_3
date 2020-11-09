@@ -14,10 +14,6 @@
             }
         }
     }
-    .bg_la_palette_du_gout {
-        background-position: 50% 155px;
-        background-size: contain;
-    }
 }
 
 @media screen and (min-width: 481px) {
@@ -126,33 +122,32 @@
                 }
             }
         }
-        .bg_la_palette_du_gout {
-            .menu {
-                &__text {
-                    h2 {
-                        font-size: 2.5em;
-                    }
-                    &__fav {
-                        margin-right: 55px;
-                        .fa-heart {
-                            font-size: 3em;
-                        }
+        .menu {
+            &__text {
+                h2 {
+                    font-size: 2.5em;
+                }
+                &__fav {
+                    margin-right: 55px;
+                    .fa-heart {
+                        font-size: 3em;
                     }
                 }
-                &__section {
-                    &__liste {
-                        &__shadow-holder {
-                            &__plat {
-                                width: 450px;
-                                &__nom {
-                                    width: 420px;
-                                }
+            }
+            &__section {
+                &__liste {
+                    &__shadow-holder {
+                        &__plat {
+                            width: 450px;
+                            &__nom {
+                                width: 420px;
                             }
                         }
                     }
                 }
             }
         }
+
         footer {
             font-size: 0.75em;
         }
