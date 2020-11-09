@@ -51,9 +51,9 @@
                 font-size: 2em;
             }
             &__button {
-                width: 366px;
-                height: 80px;
-                font-size: 1.7em;
+                width: 450px;
+                height: 110px;
+                font-size: 2em;
             }
         }
         .fonctionnement {
@@ -190,9 +190,9 @@
                 font-size: 2em;
             }
             &__button {
-                width: 550px;
-                height: 120px;
-                font-size: 2.5em;
+                width: 600px;
+                height: 130px;
+                font-size: 2.7em;
             }
         }
         .fonctionnement {
@@ -303,27 +303,27 @@
         justify-content: center;
         header {
             h1 {
-                font-size: 3.9em;
+                font-size: 5em;
             }
         }
         .localisation {
-            &__ville {
-                font-size: 2em;
+            &__ville, .fa-map-marker-alt {
+                font-size: 3em;
             }
         }
         .explorer {
             h2 {
-                font-size: 2.5em;
+                font-size: 3em;
                 margin-right: 20px;
                 margin-left: 20px;
             }
             p {
-                font-size: 2em;
+                font-size: 2.5em;
             }
             &__button {
-                width: 460px;
-                height: 100px;
-                font-size: 2em;
+                width: 550px;
+                height: 120px;
+                font-size: 2.5em;
             }
         }
         .fonctionnement {
@@ -449,9 +449,10 @@
                 font-size: 3em;
             }
             &__button {
-                width: 600px;
-                height: 125px;
-                font-size: 2.5em;
+                width: 800px;
+                height: 200px;
+                font-size: 3.5em;        
+                border-radius: 100px;
             }
         }
         .fonctionnement {
