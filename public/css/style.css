@@ -134,7 +134,7 @@
     align-content: center;
   }
   body header h1 {
-    font-size: 3em;
+    font-size: 3.9em;
   }
   body #Retour {
     padding-left: 40px;
@@ -154,9 +154,9 @@
     font-size: 2em;
   }
   body .explorer__button {
-    width: 366px;
-    height: 80px;
-    font-size: 1.7em;
+    width: 550px;
+    height: 120px;
+    font-size: 2.5em;
   }
   body .fonctionnement {
     padding-bottom: 300px;
