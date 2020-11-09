@@ -100,6 +100,13 @@ button:focus {outline:0;}
         }
         &__content {
             margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            i {
+                justify-self: flex-start;
+                align-self: center;
+            }
         }
         .fa-mobile-alt {
             margin-left: -30px;
