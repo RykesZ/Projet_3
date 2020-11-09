@@ -157,15 +157,22 @@
 
 @media screen and (min-width: 769px) {
     .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
+        background-size: 210%;
     }
     body {
         margin: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-content: center;
         header {
             h1 {
-                font-size: 3.9em;
+                font-size: 3em;
+            }
+        }
+        #Retour {
+            padding-left: 40px;
+            .fa-arrow-left {
+                font-size: 3em;
             }
         }
         .localisation {
@@ -183,9 +190,9 @@
                 font-size: 2em;
             }
             &__button {
-                width: 460px;
-                height: 100px;
-                font-size: 2em;
+                width: 366px;
+                height: 80px;
+                font-size: 1.7em;
             }
         }
         .fonctionnement {
@@ -225,50 +232,61 @@
             }
         }
         .restaurants {
-            padding-left: 20px;
-            padding-right: 20px;
             h2 {
                 font-size: 3em;
             }
             &__liste {
                 a {
-                    width: 50%;
+                    width: 100%;
                 }
                 &__module {
-                    height: 300px;
-                    &__background {
-                        border-radius: 30px 30px 0 0;
-                    }
+                    height: 500px;
                     .new {
-                        padding: 8px 15px 8px 15px;
-                        top: 32px;
-                        right: 35px;
-                        font-size: 1.2em;
+                        padding: 10px 22px 10px 22px;
+                        top: 45px;
+                        right: 45px;
+                        font-size: 2em;
                     }
                     &__bandeau {
                         height: 245px;
-                        border-radius: 0 0 30px 30px;
-                        padding: 5px;
-                        padding-bottom: 10px;
-                        &__fav {
-                            margin-right: 50px;
-                            margin-left: 10px;
-                            .fa-heart {
-                                font-size: 3em;
-                            }
-                        }
                         &__nom-loc {
                             h3 {
-                                font-size: 2em;
+                                font-size: 3em;
                             }
                             p {
-                                font-size: 1.9em;
+                                font-size: 2.75em;
                             }
                         }
                     }
                 }
             }
         }
+        .menu {
+            &__text {
+                h2 {
+                    font-size: 2.5em;
+                }
+                &__fav {
+                    margin-right: 55px;
+                    .fa-heart {
+                        font-size: 3em;
+                    }
+                }
+            }
+            &__section {
+                &__liste {
+                    &__shadow-holder {
+                        &__plat {
+                            width: 450px;
+                            &__nom {
+                                width: 420px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         footer {
             font-size: 0.75em;
         }
