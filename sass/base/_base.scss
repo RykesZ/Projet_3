@@ -166,6 +166,7 @@
                             .animated {
                                 &__prix {
                                     font-size: 1.4em;
+                                    padding-right: 40px;
                                 }
                             }
                         }
@@ -339,6 +340,7 @@
                             .animated {
                                 &__prix {
                                     font-size: 1.4em;
+                                    padding-right: 40px;
                                 }
                             }
                         }
@@ -499,10 +501,10 @@
                                     display: inline;
                                 }
                                 h3 {
-                                    font-size: 2.5em;
+                                    font-size: 3em;
                                 }
                                 p {
-                                    font-size: 1.9em;
+                                    font-size: 2.4em;
                                 }
                                 h3, p {
                                     white-space: nowrap;
@@ -510,7 +512,8 @@
                             }
                             .animated {
                                 &__prix {
-                                    font-size: 1.9em;
+                                    font-size: 2.4em;
+                                    padding-right: 70px;
                                 }
                             }
                         }

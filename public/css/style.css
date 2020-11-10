@@ -145,6 +145,7 @@
   }
   body .menu__section__liste__shadow-holder__plat .animated__prix {
     font-size: 1.4em;
+    padding-right: 40px;
   }
   body .commande__button {
     width: 300px;
@@ -290,6 +291,7 @@
   }
   body .menu__section__liste__shadow-holder__plat .animated__prix {
     font-size: 1.4em;
+    padding-right: 40px;
   }
   body .commande__button {
     width: 350px;
@@ -420,16 +422,17 @@
     display: inline;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
   body .menu__section__liste__shadow-holder__plat__nom p {
-    font-size: 1.9em;
+    font-size: 2.4em;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3, body .menu__section__liste__shadow-holder__plat__nom p {
     white-space: nowrap;
   }
   body .menu__section__liste__shadow-holder__plat .animated__prix {
-    font-size: 1.9em;
+    font-size: 2.4em;
+    padding-right: 70px;
   }
   body .commande__button {
     width: 425px;
