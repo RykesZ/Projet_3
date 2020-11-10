@@ -125,7 +125,7 @@
         .menu {
             &__text {
                 h2 {
-                    font-size: 2.5em;
+                    font-size: 3.5em;
                 }
                 &__fav {
                     margin-right: 55px;
@@ -136,15 +136,222 @@
             }
             &__section {
                 &__liste {
+                    justify-content: flex-start;
                     &__shadow-holder {
+                        margin-right: 0;
+                        margin-left: 0;
+                        width: 100%;
+                        max-width: 890px;
                         &__plat {
-                            width: 450px;
+                            width: 100%;
                             &__nom {
-                                width: 420px;
+                                width: 100%;
+                                padding-right: 110px;
+                                .active-at-480 {
+                                    display: inline;
+                                }
+                                .active-at-600 {
+                                    display: none;
+                                }
+                                h3 {
+                                    font-size: 2em;
+                                }
+                                p {
+                                    font-size: 1.4em;
+                                }
+                                h3, p {
+                                    white-space: nowrap;
+                                }
+                            }
+                            .animated {
+                                &__prix {
+                                    font-size: 1.4em;
+                                }
                             }
                         }
                     }
                 }
+            }
+        }
+        .commande {
+            &__button {
+                width: 300px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                font-size: 1.5em;
+            }
+        }
+
+        footer {
+            font-size: 0.75em;
+        }
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
+        background-size: 210%;
+    }
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        header {
+            h1 {
+                font-size: 3em;
+            }
+        }
+        #Retour {
+            padding-left: 40px;
+            .fa-arrow-left {
+                font-size: 3em;
+            }
+        }
+        .localisation {
+            &__ville {
+                font-size: 2em;
+            }
+        }
+        .explorer {
+            h2 {
+                font-size: 2.5em;
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+            p {
+                font-size: 2em;
+            }
+            &__button {
+                width: 450px;
+                height: 110px;
+                font-size: 2em;
+            }
+        }
+        .fonctionnement {
+            padding-bottom: 300px;
+            h2 {
+                font-size: 3em;
+            }
+            &__bubble {
+                height: 175px;
+                .fa-mobile-alt, .fa-list-ul, .fa-store {
+                    font-size: 1em;
+                    margin-left: -50px;
+                }
+                .fa-mobile-alt {
+                    margin-right: 40px;
+                }
+                .fa-list-ul {
+                    margin-right: 30px;
+                }
+                .fa-store {
+                    margin-right: 25px;
+                }
+                &__content {
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+                .circle {
+                    .fa-circle {
+                        font-size: 1.75em;
+                    }
+                    .number {
+                        font-size: 0.75em;
+                        left: 27px;
+                    }
+                }
+            }
+        }
+        .restaurants {
+            h2 {
+                font-size: 3em;
+            }
+            &__liste {
+                a {
+                    width: 100%;
+                }
+                &__module {
+                    height: 500px;
+                    .new {
+                        padding: 10px 22px 10px 22px;
+                        top: 45px;
+                        right: 45px;
+                        font-size: 2em;
+                    }
+                    &__bandeau {
+                        height: 245px;
+                        &__nom-loc {
+                            h3 {
+                                font-size: 3em;
+                            }
+                            p {
+                                font-size: 2.75em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu {
+            &__text {
+                h2 {
+                    font-size: 3.5em;
+                }
+                &__fav {
+                    margin-right: 55px;
+                    .fa-heart {
+                        font-size: 3em;
+                    }
+                }
+            }
+            &__section {
+                &__liste {
+                    justify-content: flex-start;
+                    &__shadow-holder {
+                        margin-right: 0;
+                        margin-left: 0;
+                        width: 100%;
+                        max-width: 890px;
+                        &__plat {
+                            width: 100%;
+                            &__nom {
+                                width: 100%;
+                                padding-right: 110px;
+                                .active-at-480 {
+                                    display: none;
+                                }
+                                .active-at-600 {
+                                    display: inline;
+                                }
+                                h3 {
+                                    font-size: 2em;
+                                }
+                                p {
+                                    font-size: 1.4em;
+                                }
+                                h3, p {
+                                    white-space: nowrap;
+                                }
+                            }
+                            .animated {
+                                &__prix {
+                                    font-size: 1.4em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .commande {
+            &__button {
+                width: 350px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                font-size: 2em;
             }
         }
 
@@ -264,26 +471,59 @@
         .menu {
             &__text {
                 h2 {
-                    font-size: 2.5em;
+                    font-size: 4em;
                 }
                 &__fav {
-                    margin-right: 55px;
+                    margin-right: 100px;
                     .fa-heart {
-                        font-size: 3em;
+                        font-size: 4em;
                     }
                 }
             }
             &__section {
                 &__liste {
                     &__shadow-holder {
+                        max-width: 890px;
+                        width: 100%;
+                        padding-right: 20px;
                         &__plat {
-                            width: 450px;
                             &__nom {
-                                width: 420px;
+                                width: 100%;
+                                .active-at-480 {
+                                    display: none;
+                                }
+                                .active-at-600 {
+                                    display: none;
+                                }
+                                .active-at-769 {
+                                    display: inline;
+                                }
+                                h3 {
+                                    font-size: 2.5em;
+                                }
+                                p {
+                                    font-size: 1.9em;
+                                }
+                                h3, p {
+                                    white-space: nowrap;
+                                }
+                            }
+                            .animated {
+                                &__prix {
+                                    font-size: 1.9em;
+                                }
                             }
                         }
                     }
                 }
+            }
+        }
+        .commande {
+            &__button {
+                width: 425px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                font-size: 2.5em;
             }
         }
 
@@ -409,6 +649,41 @@
                             }
                             p {
                                 font-size: 1.9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu {
+            &__section {
+                &__liste {
+                    &__shadow-holder {
+                        max-width: 890px;
+                        &__plat {
+                            &__nom {
+                                width: 100%;
+                                .active-at-480 {
+                                    display: none;
+                                }
+                                .active-at-600 {
+                                    display: none;
+                                }
+                                .active-at-769 {
+                                    display: none;
+                                }
+                                h3 {
+                                    font-size: 3em;
+                                }
+                                p {
+                                    font-size: 2.4em;
+                                }
+                                
+                            }
+                            .animated {
+                                &__prix {
+                                    font-size: 2.4em;
+                                }
                             }
                         }
                     }
