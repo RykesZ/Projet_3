@@ -154,10 +154,10 @@
                                     display: none;
                                 }
                                 h3 {
-                                    font-size: 2em;
+                                    font-size: 2.3em;
                                 }
                                 p {
-                                    font-size: 1.4em;
+                                    font-size: 1.7em;
                                 }
                                 h3, p {
                                     white-space: nowrap;
@@ -165,7 +165,7 @@
                             }
                             .animated {
                                 &__prix {
-                                    font-size: 1.4em;
+                                    font-size: 1.7em;
                                     padding-right: 40px;
                                 }
                             }
@@ -328,10 +328,10 @@
                                     display: inline;
                                 }
                                 h3 {
-                                    font-size: 2em;
+                                    font-size: 2.3em;
                                 }
                                 p {
-                                    font-size: 1.4em;
+                                    font-size: 1.7em;
                                 }
                                 h3, p {
                                     white-space: nowrap;
@@ -339,7 +339,7 @@
                             }
                             .animated {
                                 &__prix {
-                                    font-size: 1.4em;
+                                    font-size: 1.7em;
                                     padding-right: 40px;
                                 }
                             }
@@ -501,10 +501,10 @@
                                     display: inline;
                                 }
                                 h3 {
-                                    font-size: 3em;
+                                    font-size: 2.3em;
                                 }
                                 p {
-                                    font-size: 2.4em;
+                                    font-size: 1.7em;
                                 }
                                 h3, p {
                                     white-space: nowrap;
@@ -512,7 +512,7 @@
                             }
                             .animated {
                                 &__prix {
-                                    font-size: 2.4em;
+                                    font-size: 1.7em;
                                     padding-right: 70px;
                                 }
                             }
@@ -821,6 +821,13 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        .menu {
+            &__section {
+                &__liste {
+                    justify-content: center;
                 }
             }
         }

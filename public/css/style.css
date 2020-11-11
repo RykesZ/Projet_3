@@ -135,16 +135,16 @@
     display: none;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3 {
-    font-size: 2em;
+    font-size: 2.3em;
   }
   body .menu__section__liste__shadow-holder__plat__nom p {
-    font-size: 1.4em;
+    font-size: 1.7em;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3, body .menu__section__liste__shadow-holder__plat__nom p {
     white-space: nowrap;
   }
   body .menu__section__liste__shadow-holder__plat .animated__prix {
-    font-size: 1.4em;
+    font-size: 1.7em;
     padding-right: 40px;
   }
   body .commande__button {
@@ -281,16 +281,16 @@
     display: inline;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3 {
-    font-size: 2em;
+    font-size: 2.3em;
   }
   body .menu__section__liste__shadow-holder__plat__nom p {
-    font-size: 1.4em;
+    font-size: 1.7em;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3, body .menu__section__liste__shadow-holder__plat__nom p {
     white-space: nowrap;
   }
   body .menu__section__liste__shadow-holder__plat .animated__prix {
-    font-size: 1.4em;
+    font-size: 1.7em;
     padding-right: 40px;
   }
   body .commande__button {
@@ -422,16 +422,16 @@
     display: inline;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3 {
-    font-size: 3em;
+    font-size: 2.3em;
   }
   body .menu__section__liste__shadow-holder__plat__nom p {
-    font-size: 2.4em;
+    font-size: 1.7em;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3, body .menu__section__liste__shadow-holder__plat__nom p {
     white-space: nowrap;
   }
   body .menu__section__liste__shadow-holder__plat .animated__prix {
-    font-size: 2.4em;
+    font-size: 1.7em;
     padding-right: 70px;
   }
   body .commande__button {
@@ -696,6 +696,9 @@
   }
   body .restaurants__liste__module__bandeau__nom-loc p {
     font-size: 1.9em;
+  }
+  body .menu__section__liste {
+    justify-content: center;
   }
   body footer {
     font-size: 0.75em;
