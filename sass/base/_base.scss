@@ -536,6 +536,43 @@
     }
 }
 
+@media screen and (min-width: 900px) {
+    body {
+        .menu {
+            &__section {
+                &__liste {
+                    &__shadow-holder {
+                        &__plat {
+                            &__nom {
+                                .active-at-480 {
+                                    display: none;
+                                }
+                                .active-at-600 {
+                                    display: none;
+                                }
+                                .active-at-769 {
+                                    display: none;
+                                }
+                                h3 {
+                                    font-size: 2.6em;
+                                }
+                                p {
+                                    font-size: 2.05em;
+                                }
+                            }
+                            .animated {
+                                &__prix {
+                                    font-size: 2.05em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1025px) {
     .bg_a_la_francaise, .bg_la_note_enchantee, .bg_la_palette_du_gout, .bg_le_delice_des_sens {
     }

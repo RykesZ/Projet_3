@@ -444,6 +444,26 @@
     font-size: 0.75em;
   }
 }
+@media screen and (min-width: 900px) {
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-480 {
+    display: none;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-600 {
+    display: none;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-769 {
+    display: none;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom h3 {
+    font-size: 2.6em;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom p {
+    font-size: 2.05em;
+  }
+  body .menu__section__liste__shadow-holder__plat .animated__prix {
+    font-size: 2.05em;
+  }
+}
 @media screen and (min-width: 1025px) {
   body {
     margin: 0;
