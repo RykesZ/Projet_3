@@ -553,6 +553,9 @@
                                 .active-at-769 {
                                     display: none;
                                 }
+                                .active-at-1201 {
+                                    display: none;
+                                }
                                 h3 {
                                     font-size: 2.6em;
                                 }
@@ -696,6 +699,17 @@
             }
         }
         .menu {
+            &__text {
+                h2 {
+                    font-size: 5em;
+                }
+                &__fav {
+                    margin-right: 100px;
+                    .fa-heart {
+                        font-size: 5em;
+                    }
+                }
+            }
             &__section {
                 &__liste {
                     &__shadow-holder {
@@ -710,6 +724,9 @@
                                     display: none;
                                 }
                                 .active-at-769 {
+                                    display: none;
+                                }
+                                .active-at-1201 {
                                     display: none;
                                 }
                                 h3 {
@@ -862,9 +879,42 @@
             }
         }
         .menu {
+            &__text {
+                h2 {
+                    font-size: 6em;
+                }
+                &__fav {
+                    margin-right: 100px;
+                    .fa-heart {
+                        font-size: 6em;
+                    }
+                }
+            }
             &__section {
+                &__nom {
+                    font-size: 3.6em;
+                }
                 &__liste {
                     justify-content: center;
+                    &__shadow-holder {
+                        max-width: 855px;
+                        &__plat {
+                            &__nom {
+                                .active-at-480 {
+                                    display: none;
+                                }
+                                .active-at-600 {
+                                    display: none;
+                                }
+                                .active-at-769 {
+                                    display: none;
+                                }
+                                .active-at-1201 {
+                                    display: inline;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

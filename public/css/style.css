@@ -454,6 +454,9 @@
   body .menu__section__liste__shadow-holder__plat__nom .active-at-769 {
     display: none;
   }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-1201 {
+    display: none;
+  }
   body .menu__section__liste__shadow-holder__plat__nom h3 {
     font-size: 2.6em;
   }
@@ -575,6 +578,15 @@
   body .restaurants__liste__module__bandeau__nom-loc p {
     font-size: 1.9em;
   }
+  body .menu__text h2 {
+    font-size: 5em;
+  }
+  body .menu__text__fav {
+    margin-right: 100px;
+  }
+  body .menu__text__fav .fa-heart {
+    font-size: 5em;
+  }
   body .menu__section__liste__shadow-holder {
     max-width: 890px;
   }
@@ -588,6 +600,9 @@
     display: none;
   }
   body .menu__section__liste__shadow-holder__plat__nom .active-at-769 {
+    display: none;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-1201 {
     display: none;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3 {
@@ -717,8 +732,35 @@
   body .restaurants__liste__module__bandeau__nom-loc p {
     font-size: 1.9em;
   }
+  body .menu__text h2 {
+    font-size: 6em;
+  }
+  body .menu__text__fav {
+    margin-right: 100px;
+  }
+  body .menu__text__fav .fa-heart {
+    font-size: 6em;
+  }
+  body .menu__section__nom {
+    font-size: 3.6em;
+  }
   body .menu__section__liste {
     justify-content: center;
+  }
+  body .menu__section__liste__shadow-holder {
+    max-width: 855px;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-480 {
+    display: none;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-600 {
+    display: none;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-769 {
+    display: none;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-1201 {
+    display: inline;
   }
   body footer {
     font-size: 0.75em;
