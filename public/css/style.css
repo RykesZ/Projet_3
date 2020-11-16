@@ -6,9 +6,17 @@
     flex-direction: column;
     justify-content: center;
     background-color: grey;
+    overflow-x: hidden;
+    width: 100%;
   }
   body .restaurants__liste a {
     width: 100%;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom {
+    width: 100%;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-360 {
+    display: inline;
   }
 }
 @media screen and (min-width: 481px) {
@@ -22,14 +30,24 @@
     flex-direction: column;
     align-content: center;
   }
+  body header {
+    height: 105px;
+  }
   body header h1 {
     font-size: 3em;
   }
   body #Retour {
+    height: 105px;
     padding-left: 40px;
   }
   body #Retour .fa-arrow-left {
     font-size: 3em;
+  }
+  body .localisation {
+    margin-top: 105px;
+  }
+  body .localisation .fa-map-marker-alt {
+    font-size: 1.5em;
   }
   body .localisation__ville {
     font-size: 2em;
@@ -43,22 +61,23 @@
     font-size: 2em;
   }
   body .explorer__button {
-    width: 450px;
-    height: 110px;
-    font-size: 2em;
+    width: 353px;
+    height: 92px;
+    font-size: 1.5em;
   }
   body .fonctionnement {
-    padding-bottom: 300px;
+    padding-left: 40px;
+    padding-right: 30px;
   }
   body .fonctionnement h2 {
     font-size: 3em;
   }
   body .fonctionnement__bubble {
-    height: 175px;
+    height: 140px;
   }
   body .fonctionnement__bubble .fa-mobile-alt, body .fonctionnement__bubble .fa-list-ul, body .fonctionnement__bubble .fa-store {
-    font-size: 1em;
-    margin-left: -50px;
+    font-size: 2.5em;
+    margin-left: -20px;
   }
   body .fonctionnement__bubble .fa-mobile-alt {
     margin-right: 40px;
@@ -70,14 +89,21 @@
     margin-right: 25px;
   }
   body .fonctionnement__bubble__content p {
-    font-size: 0.8em;
+    font-size: 2em;
+  }
+  body .fonctionnement__bubble .circle {
+    right: 56px;
   }
   body .fonctionnement__bubble .circle .fa-circle {
-    font-size: 1.75em;
+    font-size: 4em;
   }
   body .fonctionnement__bubble .circle .number {
-    font-size: 0.75em;
-    left: 27px;
+    font-size: 2em;
+    left: 23px;
+  }
+  body .restaurants {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   body .restaurants h2 {
     font-size: 3em;
@@ -86,22 +112,35 @@
     width: 100%;
   }
   body .restaurants__liste__module {
-    height: 500px;
+    height: 300px;
+    margin-bottom: 30px;
   }
   body .restaurants__liste__module .new {
-    padding: 10px 22px 10px 22px;
-    top: 45px;
-    right: 45px;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   body .restaurants__liste__module__bandeau {
     height: 245px;
   }
+  body .restaurants__liste__module__bandeau__nom-loc {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
   body .restaurants__liste__module__bandeau__nom-loc h3 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   body .restaurants__liste__module__bandeau__nom-loc p {
-    font-size: 2.75em;
+    font-size: 2em;
+  }
+  body .restaurants__liste__module__bandeau__fav {
+    margin-right: 75px;
+  }
+  body .restaurants__liste__module__bandeau__fav .fa-heart {
+    font-size: 3em;
+  }
+  body .menu {
+    padding-left: 25px;
+    padding-right: 25px;
   }
   body .menu__text h2 {
     font-size: 3.5em;
@@ -112,6 +151,12 @@
   body .menu__text__fav .fa-heart {
     font-size: 3em;
   }
+  body .menu__section__nom {
+    font-size: 2.3em;
+  }
+  body .menu__section__nom .soulignement {
+    border-bottom: 7px solid #99E2D0;
+  }
   body .menu__section__liste {
     justify-content: flex-start;
   }
@@ -120,13 +165,18 @@
     margin-left: 0;
     width: 100%;
     max-width: 890px;
+    border-radius: 30px 30px 30px 30px;
   }
   body .menu__section__liste__shadow-holder__plat {
     width: 100%;
+    border-radius: 30px 30px 30px 30px;
   }
   body .menu__section__liste__shadow-holder__plat__nom {
     width: 100%;
     padding-right: 110px;
+  }
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-360 {
+    display: none;
   }
   body .menu__section__liste__shadow-holder__plat__nom .active-at-480 {
     display: inline;
@@ -143,18 +193,28 @@
   body .menu__section__liste__shadow-holder__plat__nom h3, body .menu__section__liste__shadow-holder__plat__nom p {
     white-space: nowrap;
   }
+  body .menu__section__liste__shadow-holder__plat .animated {
+    right: -150px;
+  }
   body .menu__section__liste__shadow-holder__plat .animated__prix {
     font-size: 1.7em;
     padding-right: 40px;
   }
+  body .menu__section__liste__shadow-holder__plat .animated__select {
+    width: 150px;
+  }
+  body .menu__section__liste__shadow-holder__plat .animated__select .fa-check-circle {
+    font-size: 2em;
+  }
   body .commande__button {
     width: 300px;
+    height: 75px;
     padding-top: 25px;
     padding-bottom: 25px;
     font-size: 1.5em;
   }
   body footer {
-    font-size: 0.75em;
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 600px) {
@@ -167,6 +227,42 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+    /*.fonctionnement {
+        padding-bottom: 300px;
+        h2 {
+            font-size: 3em;
+        }
+        &__bubble {
+            height: 175px;
+            .fa-mobile-alt, .fa-list-ul, .fa-store {
+                font-size: 1em;
+                margin-left: -50px;
+            }
+            .fa-mobile-alt {
+                margin-right: 40px;
+            }
+            .fa-list-ul {
+                margin-right: 30px;
+            }
+            .fa-store {
+                margin-right: 25px;
+            }
+            &__content {
+                p {
+                    font-size: 0.8em;
+                }
+            }
+            .circle {
+                .fa-circle {
+                    font-size: 1.75em;
+                }
+                .number {
+                    font-size: 0.75em;
+                    left: 27px;
+                }
+            }
+        }
+    }*/
   }
   body header h1 {
     font-size: 3em;
@@ -192,38 +288,6 @@
     width: 450px;
     height: 110px;
     font-size: 2em;
-  }
-  body .fonctionnement {
-    padding-bottom: 300px;
-  }
-  body .fonctionnement h2 {
-    font-size: 3em;
-  }
-  body .fonctionnement__bubble {
-    height: 175px;
-  }
-  body .fonctionnement__bubble .fa-mobile-alt, body .fonctionnement__bubble .fa-list-ul, body .fonctionnement__bubble .fa-store {
-    font-size: 1em;
-    margin-left: -50px;
-  }
-  body .fonctionnement__bubble .fa-mobile-alt {
-    margin-right: 40px;
-  }
-  body .fonctionnement__bubble .fa-list-ul {
-    margin-right: 30px;
-  }
-  body .fonctionnement__bubble .fa-store {
-    margin-right: 25px;
-  }
-  body .fonctionnement__bubble__content p {
-    font-size: 0.8em;
-  }
-  body .fonctionnement__bubble .circle .fa-circle {
-    font-size: 1.75em;
-  }
-  body .fonctionnement__bubble .circle .number {
-    font-size: 0.75em;
-    left: 27px;
   }
   body .restaurants h2 {
     font-size: 3em;
@@ -295,12 +359,13 @@
   }
   body .commande__button {
     width: 350px;
+    height: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 2em;
   }
   body footer {
-    font-size: 0.75em;
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 769px) {
@@ -313,63 +378,76 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-  }
-  body header h1 {
-    font-size: 3.9em;
-  }
-  body #Retour {
-    padding-left: 40px;
-  }
-  body #Retour .fa-arrow-left {
-    font-size: 3em;
-  }
-  body .localisation__ville {
-    font-size: 2em;
-  }
-  body .explorer h2 {
-    font-size: 2.5em;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  body .explorer p {
-    font-size: 2em;
-  }
-  body .explorer__button {
-    width: 600px;
-    height: 130px;
-    font-size: 2.7em;
-  }
-  body .fonctionnement {
-    padding-bottom: 300px;
-  }
-  body .fonctionnement h2 {
-    font-size: 3em;
-  }
-  body .fonctionnement__bubble {
-    height: 175px;
-  }
-  body .fonctionnement__bubble .fa-mobile-alt, body .fonctionnement__bubble .fa-list-ul, body .fonctionnement__bubble .fa-store {
-    font-size: 1em;
-    margin-left: -50px;
-  }
-  body .fonctionnement__bubble .fa-mobile-alt {
-    margin-right: 40px;
-  }
-  body .fonctionnement__bubble .fa-list-ul {
-    margin-right: 30px;
-  }
-  body .fonctionnement__bubble .fa-store {
-    margin-right: 25px;
-  }
-  body .fonctionnement__bubble__content p {
-    font-size: 0.8em;
-  }
-  body .fonctionnement__bubble .circle .fa-circle {
-    font-size: 1.75em;
-  }
-  body .fonctionnement__bubble .circle .number {
-    font-size: 0.75em;
-    left: 27px;
+    /*header {
+        h1 {
+            font-size: 3.9em;
+        }
+    }
+    #Retour {
+        padding-left: 40px;
+        .fa-arrow-left {
+            font-size: 3em;
+        }
+    }
+    .localisation {
+        &__ville {
+            font-size: 2em;
+        }
+    }
+    .explorer {
+        h2 {
+            font-size: 2.5em;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        p {
+            font-size: 2em;
+        }
+        &__button {
+            width: 600px;
+            height: 130px;
+            font-size: 2.7em;
+        }
+    }
+    .fonctionnement {
+        padding-bottom: 300px;
+        h2 {
+            font-size: 3em;
+        }
+        &__bubble {
+            height: 175px;
+            .fa-mobile-alt, .fa-list-ul, .fa-store {
+                font-size: 1em;
+                margin-left: -50px;
+            }
+            .fa-mobile-alt {
+                margin-right: 40px;
+            }
+            .fa-list-ul {
+                margin-right: 30px;
+            }
+            .fa-store {
+                margin-right: 25px;
+            }
+            &__content {
+                p {
+                    font-size: 0.8em;
+                }
+            }
+            .circle {
+                .fa-circle {
+                    font-size: 1.75em;
+                }
+                .number {
+                    font-size: 0.75em;
+                    left: 27px;
+                }
+            }
+        }
+    }*/
+    /*footer {
+        font-size: 0.75em;
+    }*/
   }
   body .restaurants h2 {
     font-size: 3em;
@@ -382,8 +460,8 @@
   }
   body .restaurants__liste__module .new {
     padding: 10px 22px 10px 22px;
-    top: 45px;
-    right: 45px;
+    top: 30px;
+    right: 30px;
     font-size: 2em;
   }
   body .restaurants__liste__module__bandeau {
@@ -419,7 +497,7 @@
     display: none;
   }
   body .menu__section__liste__shadow-holder__plat__nom .active-at-769 {
-    display: inline;
+    display: none;
   }
   body .menu__section__liste__shadow-holder__plat__nom h3 {
     font-size: 2.3em;
@@ -436,15 +514,16 @@
   }
   body .commande__button {
     width: 425px;
+    height: 120px;
     padding-top: 35px;
     padding-bottom: 35px;
     font-size: 2.5em;
   }
-  body footer {
-    font-size: 0.75em;
-  }
 }
 @media screen and (min-width: 900px) {
+  body .menu__section__liste__shadow-holder__plat__nom .active-at-360 {
+    display: none;
+  }
   body .menu__section__liste__shadow-holder__plat__nom .active-at-480 {
     display: none;
   }
@@ -473,12 +552,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  body header h1 {
-    font-size: 5em;
-  }
-  body .localisation__ville, body .localisation .fa-map-marker-alt {
-    font-size: 3em;
+    /*header {
+        h1 {
+            font-size: 5em;
+        }
+    }
+    .localisation {
+        &__ville, .fa-map-marker-alt {
+            font-size: 3em;
+        }
+    }*/
+    /*footer {
+        font-size: 0.75em;
+    }*/
   }
   body .explorer h2 {
     font-size: 3em;
@@ -494,10 +580,9 @@
     font-size: 2.5em;
   }
   body .fonctionnement {
-    padding-bottom: 300px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
   body .fonctionnement h2 {
     font-size: 3em;
@@ -507,11 +592,12 @@
   body .fonctionnement__bubble {
     height: 400px;
     width: 232px;
+    margin-right: 20px;
+    margin-left: 20px;
     flex-direction: column;
     justify-content: center;
   }
   body .fonctionnement__bubble .fa-mobile-alt, body .fonctionnement__bubble .fa-list-ul, body .fonctionnement__bubble .fa-store {
-    font-size: 1em;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -521,7 +607,6 @@
     margin: 0;
   }
   body .fonctionnement__bubble__content p {
-    font-size: 0.8em;
     margin-top: 0;
   }
   body .fonctionnement__bubble .circle {
@@ -529,13 +614,6 @@
     align-self: center;
     transform: translateY(-200px);
     right: unset;
-  }
-  body .fonctionnement__bubble .circle .fa-circle {
-    font-size: 1.75em;
-  }
-  body .fonctionnement__bubble .circle .number {
-    font-size: 0.75em;
-    left: 27px;
   }
   body .restaurants {
     padding-left: 20px;
@@ -548,15 +626,16 @@
     width: 50%;
   }
   body .restaurants__liste__module {
-    height: 300px;
+    height: 400px;
+    padding: 10px;
   }
   body .restaurants__liste__module__background {
     border-radius: 30px 30px 0 0;
   }
   body .restaurants__liste__module .new {
     padding: 10px 19px 10px 19px;
-    top: 35px;
-    right: 37px;
+    top: 30px;
+    right: 30px;
     font-size: 1.5em;
   }
   body .restaurants__liste__module__bandeau {
@@ -587,6 +666,12 @@
   body .menu__text__fav .fa-heart {
     font-size: 5em;
   }
+  body .menu__section {
+    margin-bottom: 50px;
+  }
+  body .menu__section__nom {
+    font-size: 3em;
+  }
   body .menu__section__liste__shadow-holder {
     max-width: 890px;
   }
@@ -614,9 +699,6 @@
   body .menu__section__liste__shadow-holder__plat .animated__prix {
     font-size: 2.4em;
   }
-  body footer {
-    font-size: 0.75em;
-  }
 }
 @media screen and (min-width: 1201px) {
   body {
@@ -624,32 +706,40 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  body header h1 {
-    font-size: 5em;
-  }
-  body .localisation__ville, body .localisation .fa-map-marker-alt {
-    font-size: 3em;
-  }
-  body .explorer h2 {
-    font-size: 3.5em;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  body .explorer p {
-    font-size: 3em;
-  }
-  body .explorer__button {
-    width: 800px;
-    height: 200px;
-    font-size: 3.5em;
-    border-radius: 100px;
+    /*header {
+        h1 {
+            font-size: 5em;
+        }
+    }
+    .localisation {
+        &__ville, .fa-map-marker-alt {
+            font-size: 3em;
+        }
+    }
+    .explorer {
+        h2 {
+            font-size: 3.5em;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        p {
+            font-size: 3em;
+        }
+        &__button {
+            width: 800px;
+            height: 200px;
+            font-size: 3.5em;        
+            border-radius: 100px;
+        }
+    }*/
+    /*footer {
+        font-size: 0.75em;
+    }*/
   }
   body .fonctionnement {
-    padding-bottom: 300px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
   }
   body .fonctionnement h2 {
@@ -664,7 +754,7 @@
     justify-content: center;
   }
   body .fonctionnement__bubble .fa-mobile-alt, body .fonctionnement__bubble .fa-list-ul, body .fonctionnement__bubble .fa-store {
-    font-size: 1.5em;
+    font-size: 3.5em;
     margin: 0;
     padding: 0;
     position: absolute;
@@ -674,21 +764,17 @@
     margin: 0;
   }
   body .fonctionnement__bubble__content p {
-    font-size: 1em;
     margin-top: 0;
   }
   body .fonctionnement__bubble .circle {
+    font-size: 1.5em;
     position: absolute;
     align-self: center;
     transform: translateY(-200px);
     right: unset;
   }
-  body .fonctionnement__bubble .circle .fa-circle {
-    font-size: 2.75em;
-  }
   body .fonctionnement__bubble .circle .number {
-    font-size: 1.75em;
-    left: 35px;
+    left: 33px;
   }
   body .restaurants {
     padding-left: 20px;
@@ -708,10 +794,10 @@
     border-radius: 30px 30px 0 0;
   }
   body .restaurants__liste__module .new {
-    padding: 10px 19px 10px 19px;
-    top: 35px;
-    right: 37px;
-    font-size: 1.5em;
+    padding: 7px 15px 7px 15px;
+    top: 25px;
+    right: 25px;
+    font-size: 1em;
   }
   body .restaurants__liste__module__bandeau {
     height: 245px;
@@ -762,9 +848,6 @@
   body .menu__section__liste__shadow-holder__plat__nom .active-at-1201 {
     display: inline;
   }
-  body footer {
-    font-size: 0.75em;
-  }
 }
 a {
   color: inherit;
@@ -783,27 +866,26 @@ a {
   word-break: break-word;
 }
 .explorer h2 {
-  margin-top: 90px;
-  margin-left: 120px;
-  margin-right: 120px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .explorer p {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  padding-bottom: 700px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   background-color: white;
   margin: 0;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .fonctionnement h2 {
-  margin-left: 20px;
   margin-bottom: 50px;
 }
 
@@ -873,7 +955,7 @@ a {
 }
 header h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 4.3em;
+  font-size: 2em;
 }
 
 footer .logo_footer {
@@ -896,17 +978,23 @@ h2 {
 }
 
 .localisation__ville {
-  font-size: 3em;
+  font-size: 1em;
   font-weight: bold;
 }
 
+.explorer h2 {
+  font-size: 2em;
+}
 .explorer p {
-  font-size: 3em;
+  font-size: 1.5em;
 }
 .explorer__button {
   font-family: "Roboto-Bold";
 }
 
+.fonctionnement h2 {
+  font-size: 2em;
+}
 .fonctionnement__bubble__content p {
   font-family: "Roboto-Bold";
 }
@@ -916,11 +1004,11 @@ h2 {
 }
 
 .restaurants h2 {
-  font-size: 4.5em;
+  font-size: 2em;
 }
 
 .menu__section__nom {
-  font-size: 2.6em;
+  font-size: 1.3em;
 }
 .menu__text {
   display: flex;
@@ -929,7 +1017,7 @@ h2 {
 }
 .menu__text h2 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 4.4em;
+  font-size: 1.6em;
 }
 .menu__text .fa-heart {
   -webkit-text-stroke: 1px #000;
@@ -939,8 +1027,8 @@ h2 {
 }
 
 .soulignement {
-  border-bottom: 8px solid #99E2D0;
-  padding-bottom: 15px;
+  border-bottom: 4px solid #99E2D0;
+  padding-bottom: 5px;
 }
 
 .new {
@@ -956,20 +1044,20 @@ button:focus {
 }
 .explorer__button {
   border-radius: 60px;
-  padding: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 2.5em;
+  padding: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
   box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
   background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
   color: white;
   font-family: "Roboto";
   font-weight: 700;
   border: none;
-  margin-top: 60px;
-  margin-bottom: 180px;
-  width: 550px;
-  height: 120px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  width: 235px;
+  height: 61px;
   align-self: center;
   cursor: pointer;
 }
@@ -1027,15 +1115,14 @@ button:focus {
 .fonctionnement__bubble {
   border: hidden;
   background-color: #f0f0f0;
-  height: 200px;
-  border-radius: 30px;
+  height: 70px;
+  border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 35px;
-  margin-left: 50px;
-  margin-right: 30px;
-  padding: 35px;
+  margin-left: 10px;
+  padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.5), 0 3px 10px 0 rgba(220, 220, 220, 0.5);
-  font-size: 2.5em;
+  font-size: 1em;
   font-family: "Roboto-Bold";
   display: flex;
   justify-content: flex-start;
@@ -1046,7 +1133,6 @@ button:focus {
   background-color: #eee0ff;
 }
 .fonctionnement__bubble__content {
-  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -1056,23 +1142,23 @@ button:focus {
   align-self: center;
 }
 .fonctionnement__bubble .fa-mobile-alt {
-  margin-left: -30px;
-  margin-right: 60px;
+  margin-left: -15px;
+  margin-right: 25px;
   color: gray;
 }
 .fonctionnement__bubble .fa-list-ul {
-  margin-left: -35px;
-  margin-right: 50px;
+  margin-left: -15px;
+  margin-right: 25px;
   color: gray;
 }
 .fonctionnement__bubble .fa-store {
-  margin-left: -40px;
-  margin-right: 45px;
+  margin-left: -15px;
+  margin-right: 25px;
   color: #9356DC;
 }
 .fonctionnement__bubble .circle {
   position: relative;
-  right: 65px;
+  right: 35px;
   display: flex;
 }
 .fonctionnement__bubble .circle .fa-circle {
@@ -1081,7 +1167,7 @@ button:focus {
 .fonctionnement__bubble .circle .number {
   position: absolute;
   z-index: 2;
-  left: 30px;
+  left: 12px;
   align-self: center;
   text-align: center;
   color: white;
@@ -1094,11 +1180,8 @@ button:focus {
   background-color: #f7f7f7;
   margin: 0;
   padding-bottom: 70px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.restaurants h2 {
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .restaurants__liste {
   display: flex;
@@ -1107,7 +1190,7 @@ button:focus {
 .restaurants__liste__module {
   margin-bottom: 20px;
   border: hidden;
-  padding: 20px;
+  padding: 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1115,7 +1198,7 @@ button:focus {
   align-self: center;
   background: none;
   width: 100%;
-  height: 700px;
+  height: 230px;
   cursor: pointer;
   z-index: 3;
 }
@@ -1126,23 +1209,23 @@ button:focus {
   color: #278870;
   font-weight: bold;
   background-color: #99E2D0;
-  padding: 15px 30px 15px 30px;
+  padding: 7px 15px 7px 15px;
   border-radius: 2px;
   position: absolute;
-  top: 60px;
-  right: 50px;
-  font-size: 2.7em;
+  top: 15px;
+  right: 15px;
+  font-size: 1em;
 }
 .restaurants__liste__module__background {
   height: 800px;
   width: 100%;
-  border-radius: 40px 40px 0 0;
+  border-radius: 20px 20px 0 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .restaurants__liste__module__background--palette {
   background-image: url(../images/la_palette_du_gout.jpg);
-  /*background-position: 50% -80px;*/
+  background-position: 50% -28px;
 }
 .restaurants__liste__module__background--note {
   background-image: url(../images/la_note_enchantee.jpg);
@@ -1158,35 +1241,35 @@ button:focus {
 }
 .restaurants__liste__module__bandeau {
   background-color: white;
-  height: 340px;
+  height: 350px;
   width: 100%;
-  border-radius: 0 0 40px 40px;
+  border-radius: 0 0 20px 20px;
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 0;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.5), 0 3px 10px 0 rgba(220, 220, 220, 0.5);
 }
 .restaurants__liste__module__bandeau__nom-loc {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 15px;
+  margin-bottom: 5px;
 }
 .restaurants__liste__module__bandeau__nom-loc h3 {
   margin: 0;
-  font-size: 4em;
+  font-size: 1.3em;
   font-weight: bold;
   text-align: left;
-  margin-top: 10px;
 }
 .restaurants__liste__module__bandeau__nom-loc p {
-  font-size: 3.5em;
+  font-size: 1em;
   margin: 0;
   text-align: left;
   margin-top: 5px;
 }
 .restaurants__liste__module__bandeau__fav {
   display: flex;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 .restaurants__liste__module__bandeau__fav .fa-heart {
   position: absolute;
@@ -1194,7 +1277,7 @@ button:focus {
   cursor: pointer;
 }
 .restaurants__liste__module__bandeau__fav .fa-heart__empty {
-  -webkit-text-stroke: 3px #000;
+  -webkit-text-stroke: 2px #000;
   -webkit-text-fill-color: transparent;
   z-index: 5;
 }
@@ -1231,19 +1314,18 @@ button:focus {
 }
 .commande__button {
   border-radius: 60px;
-  padding: 35px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 2.5em;
+  padding: 15px;
+  font-size: 1em;
   box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
   background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
   color: white;
   font-family: "Roboto";
   font-weight: 700;
   border: none;
-  margin-bottom: 180px;
-  margin-top: 90px;
-  width: 520px;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  width: 200px;
+  height: 50px;
   align-self: center;
   cursor: pointer;
 }
@@ -1261,7 +1343,7 @@ header {
   width: 100%;
   z-index: 500;
   background-color: white;
-  height: 150px;
+  height: 70px;
   top: 0;
   left: 0;
   align-items: center;
@@ -1274,10 +1356,10 @@ header {
   position: fixed;
   width: 100%;
   z-index: 501;
-  height: 150px;
+  height: 70px;
   top: 0;
   align-items: center;
-  padding-left: 60px;
+  padding-left: 20px;
 }
 #Retour a {
   text-decoration: none;
@@ -1289,15 +1371,15 @@ header {
   justify-content: center;
   text-align: center;
   background-color: #e9e9e9;
-  margin-top: 150px;
+  margin-top: 70px;
 }
 .localisation__ville {
-  margin: 35px;
+  margin: 18px;
 }
 
 footer {
   background-color: #353535;
-  padding: 60px;
+  padding: 35px;
   position: relative;
   bottom: 0;
   left: 0;
@@ -1305,25 +1387,25 @@ footer {
 }
 footer .logo_footer {
   margin: 0;
-  margin-bottom: 50px;
-  font-size: 2.4em;
+  margin-bottom: 25px;
+  font-size: 1.2em;
 }
 footer p {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 2.4em;
+  font-size: 1em;
 }
 footer .links_footer {
   display: flex;
   justify-content: flex-start;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 footer .links_footer .fa-hands-helping {
   color: white;
   margin-right: 10px;
   align-self: center;
   position: relative;
-  bottom: 10px;
+  bottom: 3px;
 }
 footer .links_footer .fa-utensils {
   color: white;
@@ -1342,21 +1424,18 @@ footer .links_footer .fa-utensils {
 }
 
 .menu {
-  margin-top: 700px;
+  margin-top: 300px;
   margin-bottom: 0;
   background-color: #e6e6e6;
-  border-radius: 100px 100px 0 0;
+  border-radius: 50px 50px 0 0;
   padding: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   user-select: none;
-}
-.menu__text {
-  margin-top: 10px;
 }
 .menu__text__fav {
   display: flex;
-  margin-right: 100px;
+  margin-right: 40px;
 }
 .menu__text__fav .fa-heart {
   position: absolute;
@@ -1364,7 +1443,7 @@ footer .links_footer .fa-utensils {
   cursor: pointer;
 }
 .menu__text__fav .fa-heart__empty {
-  -webkit-text-stroke: 3px #000;
+  -webkit-text-stroke: 2px #000;
   -webkit-text-fill-color: transparent;
   z-index: 4;
 }
@@ -1384,6 +1463,13 @@ footer .links_footer .fa-utensils {
   animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
+.menu__section {
+  margin-bottom: 20px;
+}
+.menu__section__nom {
+  margin: 0;
+  margin-bottom: 10px;
+}
 .menu__section__liste {
   display: flex;
   flex-wrap: wrap;
@@ -1391,14 +1477,13 @@ footer .links_footer .fa-utensils {
 }
 .menu__section__liste__shadow-holder {
   box-shadow: 1px 4px 8px 1px rgba(220, 220, 220, 0.5), 2px 6px 20px 2px rgba(230, 230, 230, 0.5);
-  border-radius: 40px 40px 40px 40px;
-  margin-bottom: 35px;
-  margin-right: 20px;
-  margin-left: 20px;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 15px;
   position: relative;
   top: 70px;
-  min-height: 180px;
+  min-height: 70px;
   max-height: 250px;
+  width: 100%;
   opacity: 1;
   transform: translateY(-50px);
   animation-name: slide-up;
@@ -1421,7 +1506,7 @@ footer .links_footer .fa-utensils {
   display: flex;
   position: relative;
   background-color: #f3f3f3;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 20px 20px 20px 20px;
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -1429,9 +1514,9 @@ footer .links_footer .fa-utensils {
   z-index: 3;
 }
 .menu__section__liste__shadow-holder__plat__nom {
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 710px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
 }
 .menu__section__liste__shadow-holder__plat__nom br {
   display: none;
@@ -1443,19 +1528,20 @@ footer .links_footer .fa-utensils {
   margin: 0;
 }
 .menu__section__liste__shadow-holder__plat__nom h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 3em;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1em;
+  font-weight: bold;
 }
 .menu__section__liste__shadow-holder__plat__nom p {
-  font-size: 2.4em;
-  margin-bottom: 30px;
+  font-size: 1em;
+  margin-bottom: 15px;
 }
 .menu__section__liste__shadow-holder__plat .animated {
   display: flex;
   position: absolute;
   height: 100%;
-  right: -150px;
+  right: -75px;
   transition: transform 500ms ease-in-out;
   z-index: 2;
 }
@@ -1464,16 +1550,16 @@ footer .links_footer .fa-utensils {
   align-self: flex-end;
   text-align: right;
   margin: 0;
-  padding-right: 70px;
-  padding-bottom: 30px;
+  padding-right: 25px;
+  padding-bottom: 15px;
   width: 40px;
-  font-size: 2.4em;
+  font-size: 1em;
 }
 .menu__section__liste__shadow-holder__plat .animated__select {
   display: flex;
   justify-content: center;
   background-color: #99E2D0;
-  width: 150px;
+  width: 75px;
 }
 .menu__section__liste__shadow-holder__plat .animated__select .fa-check-circle {
   align-self: center;
@@ -1481,19 +1567,35 @@ footer .links_footer .fa-utensils {
   transition: transform 500ms ease-in-out;
   transition-delay: 100ms;
 }
-.menu__section__liste__shadow-holder__plat:hover .animated {
-  transform: translateX(-150px);
+@media screen and (max-width: 480px) {
+  .menu__section__liste__shadow-holder__plat:hover .animated {
+    transform: translateX(-75px);
+  }
+}
+@media screen and (min-width: 481px) {
+  .menu__section__liste__shadow-holder__plat:hover .animated {
+    transform: translateX(-150px);
+  }
 }
 .menu__section__liste__shadow-holder__plat:hover .animated .fa-check-circle {
   transform: rotateZ(360deg);
 }
-.menu__section__liste__shadow-holder__plat:hover .menu__section__liste__shadow-holder__plat__nom {
-  animation-name: ellipsis;
-  animation-duration: 500ms;
-  animation-fill-mode: both;
-}
 .menu__section__liste__shadow-holder__plat:hover .menu__section__liste__shadow-holder__plat__nom h3, .menu__section__liste__shadow-holder__plat:hover .menu__section__liste__shadow-holder__plat__nom p {
   white-space: nowrap;
+}
+@media screen and (max-width: 480px) {
+  .menu__section__liste__shadow-holder__plat:hover .menu__section__liste__shadow-holder__plat__nom {
+    animation-name: ellipsis360;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+  }
+}
+@media screen and (min-width: 481px) {
+  .menu__section__liste__shadow-holder__plat:hover .menu__section__liste__shadow-holder__plat__nom {
+    animation-name: ellipsis480;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+  }
 }
 
 @keyframes slide-up {
@@ -1506,7 +1608,15 @@ footer .links_footer .fa-utensils {
     opacity: 1;
   }
 }
-@keyframes ellipsis {
+@keyframes ellipsis360 {
+  0% {
+    width: calc(100% - 0);
+  }
+  100% {
+    width: calc(100% - 150px);
+  }
+}
+@keyframes ellipsis480 {
   0% {
     width: calc(100% - 0);
   }
@@ -1518,27 +1628,31 @@ footer .links_footer .fa-utensils {
   display: flex;
   background-image: url(../images/a_la_francaise.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 152px;
+  background-size: 115%;
+  background-position-y: 70px;
 }
 
 .bg_la_note_enchantee {
   display: flex;
   background-image: url(../images/la_note_enchantee.jpg);
   background-repeat: no-repeat;
-  background-position: 50% -103px;
+  background-size: 100%;
 }
 
 .bg_la_palette_du_gout {
   display: flex;
   background-image: url(../images/la_palette_du_gout.jpg);
   background-repeat: no-repeat;
+  background-size: 118%;
+  background-position-y: 70px;
 }
 
 .bg_le_delice_des_sens {
   display: flex;
   background-image: url(../images/le_delice_des_sens.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 152px;
+  background-size: 115%;
+  background-position-y: 70px;
 }
 
 /* {

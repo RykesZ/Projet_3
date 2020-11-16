@@ -6,20 +6,20 @@ button:focus {outline:0;}
     }
     &__button {
         border-radius: 60px;
-        padding: 35px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 2.5em;
-        box-shadow: 0 8px 16px 0 nth($black-shadow-colours, 1), 0 6px 20px 0 nth($black-shadow-colours, 2);
-        background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
+        padding: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1em;
+        box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
+        background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
         color: white;
-        font-family: 'Roboto';
+        font-family: "Roboto";
         font-weight: 700;
         border: none;
-        margin-top: 60px;
-        margin-bottom: 180px;
-        width: 550px;
-        height: 120px;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        width: 235px;
+        height: 61px;
         align-self: center;
         cursor: pointer;
         &:hover {
@@ -80,17 +80,16 @@ button:focus {outline:0;}
 .fonctionnement {
     &__bubble {
         border: hidden;
-        background-color: $bg-colour-fonctionnement-bubble-1;
-        height: 200px;
-        border-radius: 30px;
+        background-color: #f0f0f0;
+        height: 70px;
+        border-radius: 20px;
         margin-top: 15px;
         margin-bottom: 35px;
-        margin-left: 50px;
-        margin-right: 30px;
-        padding: 35px;
-        box-shadow: 0 4px 8px 0 nth($dark-shadow-colours, 1), 0 3px 10px 0 nth($dark-shadow-colours, 2);
-        font-size: 2.5em;
-        font-family: 'Roboto-Bold';
+        margin-left: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.5), 0 3px 10px 0 rgba(220, 220, 220, 0.5);
+        font-size: 1em;
+        font-family: "Roboto-Bold";
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -99,7 +98,6 @@ button:focus {outline:0;}
             background-color: #eee0ff;
         }
         &__content {
-            margin-left: 20px;
             display: flex;
             justify-content: center;
             align-content: center;
@@ -109,23 +107,23 @@ button:focus {outline:0;}
             }
         }
         .fa-mobile-alt {
-            margin-left: -30px;
-            margin-right: 60px;
+            margin-left: -15px;
+            margin-right: 25px;
             color: gray;
         }
         .fa-list-ul {
-            margin-left: -35px;
-            margin-right: 50px;
+            margin-left: -15px;
+            margin-right: 25px;
             color: gray;
         }
         .fa-store {
-            margin-left: -40px;
-            margin-right: 45px;
+            margin-left: -15px;
+            margin-right: 25px;
             color: $colour-primary;
         }
         .circle {
             position: relative;
-            right: 65px;
+            right: 35px;
             display: flex;
             .fa-circle {
                 color: $colour-primary;
@@ -133,7 +131,7 @@ button:focus {outline:0;}
             .number {
                 position: absolute;
                 z-index: 2;
-                left: 30px;
+                left: 12px;
                 align-self: center;
                 text-align: center;
                 color: white;
@@ -149,18 +147,15 @@ button:focus {outline:0;}
     background-color: #f7f7f7;
     margin: 0;
     padding-bottom: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
-    h2 {
-        margin-left: 20px;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
     &__liste {
         display: flex;
         flex-wrap: wrap;
         &__module {
             margin-bottom: 20px;
             border: hidden;
-            padding: 20px;
+            padding: 0;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -168,7 +163,7 @@ button:focus {outline:0;}
             align-self: center;
             background: none;
             width: 100%;
-            height: 700px;
+            height: 230px;
             cursor: pointer;
             z-index: 3;
             &:hover &__bandeau {
@@ -178,23 +173,23 @@ button:focus {outline:0;}
                 @include colour-variation;
                 font-weight: bold;
                 background-color: $colour-tertiary;
-                padding: 15px 30px 15px 30px;
+                padding: 7px 15px 7px 15px;
                 border-radius: 2px;
                 position: absolute;
-                top: 60px;
-                right: 50px;
-                font-size: 2.7em;
+                top: 15px;
+                right: 15px;
+                font-size: 1em;
             }
             &__background {
                 height: 800px;
                 width: 100%;
-                border-radius: 40px 40px 0 0;
+                border-radius: 20px 20px 0 0;
                 background-repeat: no-repeat;
                 background-size: cover;
                 &--palette {
                     background-image: url(../images/la_palette_du_gout.jpg);
 
-                    /*background-position: 50% -80px;*/
+                    background-position: 50% -28px;
                 }
                 &--note {
                     background-image: url(../images/la_note_enchantee.jpg);
@@ -215,26 +210,26 @@ button:focus {outline:0;}
 
             &__bandeau {
                 background-color: rgb(255, 255, 255);
-                height: 340px;
+                height: 350px;
                 width: 100%;
-                border-radius: 0 0 40px 40px;
+                border-radius: 0 0 20px 20px;
                 display: flex;
                 align-items: center;
-                padding: 20px;
+                padding: 0;
                 box-sizing: border-box;
                 box-shadow: 0 4px 8px 0 nth($dark-shadow-colours, 1), 0 3px 10px 0 nth($dark-shadow-colours, 2);
                 &__nom-loc {
                     flex: 1;
-                    margin-left: 20px;
+                    margin-left: 15px;
+                    margin-bottom: 5px;
                     h3 {
                         margin: 0;
-                        font-size: 4em;
+                        font-size: 1.3em;
                         font-weight: bold;
                         text-align: left;
-                        margin-top: 10px;
                     }
                     p {
-                        font-size: 3.5em;
+                        font-size: 1em;
                         margin: 0;
                         text-align: left;
                         margin-top: 5px;
@@ -242,13 +237,13 @@ button:focus {outline:0;}
                 }
                 &__fav {
                     display: flex;
-                    margin-right: 100px;
+                    margin-right: 50px;
                     .fa-heart {
                         position: absolute;
                         align-self: center;
                         cursor: pointer;
                         &__empty {
-                            -webkit-text-stroke: 3px #000;
+                            -webkit-text-stroke: 2px #000;
                             -webkit-text-fill-color: transparent;
                             z-index: 5;
                         }
@@ -291,19 +286,18 @@ button:focus {outline:0;}
     margin: 0;
     &__button {
         border-radius: 60px;
-        padding: 35px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        font-size: 2.5em;
-        box-shadow: 0 8px 16px 0 nth($black-shadow-colours, 1), 0 6px 20px 0 nth($black-shadow-colours, 2);
-        background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
+        padding: 15px;
+        font-size: 1em;
+        box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
+        background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
         color: white;
-        font-family: 'Roboto';
+        font-family: "Roboto";
         font-weight: 700;
         border: none;
-        margin-bottom: 180px;
-        margin-top: 90px;
-        width: 520px;
+        margin-bottom: 80px;
+        margin-top: 40px;
+        width: 200px;
+        height: 50px;
         align-self: center;
         cursor: pointer;
         &:hover {

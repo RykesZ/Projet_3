@@ -6,10 +6,28 @@
         flex-direction: column;
         justify-content: center;
         background-color: grey;
+        overflow-x: hidden;
+        width: 100%;
         .restaurants {
             &__liste {
                 a {
                     width: 100%;
+                }
+            }
+        }
+        .menu {
+            &__section {
+                &__liste {
+                    &__shadow-holder {
+                        &__plat {
+                            &__nom {
+                                width: 100%;
+                                .active-at-360 {
+                                    display: inline;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -26,17 +44,23 @@
         flex-direction: column;
         align-content: center;
         header {
+            height: 105px;
             h1 {
                 font-size: 3em;
             }
         }
         #Retour {
+            height: 105px;
             padding-left: 40px;
             .fa-arrow-left {
                 font-size: 3em;
             }
         }
         .localisation {
+            margin-top: 105px;
+            .fa-map-marker-alt {
+                font-size: 1.5em;
+            }
             &__ville {
                 font-size: 2em;
             }
@@ -51,21 +75,22 @@
                 font-size: 2em;
             }
             &__button {
-                width: 450px;
-                height: 110px;
-                font-size: 2em;
+                width: 353px;
+                height: 92px;
+                font-size: 1.5em;
             }
         }
         .fonctionnement {
-            padding-bottom: 300px;
+            padding-left: 40px;
+            padding-right: 30px;
             h2 {
                 font-size: 3em;
             }
             &__bubble {
-                height: 175px;
+                height: 140px;
                 .fa-mobile-alt, .fa-list-ul, .fa-store {
-                    font-size: 1em;
-                    margin-left: -50px;
+                    font-size: 2.5em;
+                    margin-left: -20px;
                 }
                 .fa-mobile-alt {
                     margin-right: 40px;
@@ -78,21 +103,24 @@
                 }
                 &__content {
                     p {
-                        font-size: 0.8em;
+                        font-size: 2em;
                     }
                 }
                 .circle {
+                    right: 56px;
                     .fa-circle {
-                        font-size: 1.75em;
+                        font-size: 4em;
                     }
                     .number {
-                        font-size: 0.75em;
-                        left: 27px;
+                        font-size: 2em;
+                        left: 23px;
                     }
                 }
             }
         }
         .restaurants {
+            padding-left: 30px;
+            padding-right: 30px;
             h2 {
                 font-size: 3em;
             }
@@ -101,21 +129,28 @@
                     width: 100%;
                 }
                 &__module {
-                    height: 500px;
+                    height: 300px;
+                    margin-bottom: 30px;
                     .new {
-                        padding: 10px 22px 10px 22px;
-                        top: 45px;
-                        right: 45px;
-                        font-size: 2em;
+                        font-size: 1.5em;
                     }
                     &__bandeau {
                         height: 245px;
                         &__nom-loc {
+                            margin-left: 25px;
+                            margin-bottom: 15px;
+                            margin-top: 15px;
                             h3 {
-                                font-size: 3em;
+                                font-size: 2.5em;
                             }
                             p {
-                                font-size: 2.75em;
+                                font-size: 2em;
+                            }
+                        }
+                        &__fav {
+                            margin-right: 75px;
+                            .fa-heart {
+                                font-size: 3em;
                             }
                         }
                     }
@@ -123,6 +158,8 @@
             }
         }
         .menu {
+            padding-left: 25px;
+            padding-right: 25px;
             &__text {
                 h2 {
                     font-size: 3.5em;
@@ -135,6 +172,12 @@
                 }
             }
             &__section {
+                &__nom {
+                    font-size: 2.3em;
+                    .soulignement {
+                        border-bottom: 7px solid #99E2D0;
+                    }
+                }
                 &__liste {
                     justify-content: flex-start;
                     &__shadow-holder {
@@ -142,11 +185,16 @@
                         margin-left: 0;
                         width: 100%;
                         max-width: 890px;
+                        border-radius: 30px 30px 30px 30px;
                         &__plat {
                             width: 100%;
+                            border-radius: 30px 30px 30px 30px;
                             &__nom {
                                 width: 100%;
                                 padding-right: 110px;
+                                .active-at-360 {
+                                    display: none;
+                                }
                                 .active-at-480 {
                                     display: inline;
                                 }
@@ -164,9 +212,16 @@
                                 }
                             }
                             .animated {
+                                right: -150px;
                                 &__prix {
                                     font-size: 1.7em;
                                     padding-right: 40px;
+                                }
+                                &__select {
+                                    width: 150px;
+                                    .fa-check-circle {
+                                        font-size: 2em;
+                                    }
                                 }
                             }
                         }
@@ -177,6 +232,7 @@
         .commande {
             &__button {
                 width: 300px;
+                height: 75px;
                 padding-top: 25px;
                 padding-bottom: 25px;
                 font-size: 1.5em;
@@ -184,7 +240,7 @@
         }
 
         footer {
-            font-size: 0.75em;
+            font-size: 1.5em;
         }
     }
 
@@ -230,7 +286,7 @@
                 font-size: 2em;
             }
         }
-        .fonctionnement {
+        /*.fonctionnement {
             padding-bottom: 300px;
             h2 {
                 font-size: 3em;
@@ -265,7 +321,7 @@
                     }
                 }
             }
-        }
+        }*/
         .restaurants {
             h2 {
                 font-size: 3em;
@@ -351,6 +407,7 @@
         .commande {
             &__button {
                 width: 350px;
+                height: 100px;
                 padding-top: 30px;
                 padding-bottom: 30px;
                 font-size: 2em;
@@ -358,7 +415,7 @@
         }
 
         footer {
-            font-size: 0.75em;
+            font-size: 1.5em;
         }
     }
 
@@ -373,7 +430,7 @@
         display: flex;
         flex-direction: column;
         align-content: center;
-        header {
+        /*header {
             h1 {
                 font-size: 3.9em;
             }
@@ -439,7 +496,7 @@
                     }
                 }
             }
-        }
+        }*/
         .restaurants {
             h2 {
                 font-size: 3em;
@@ -452,8 +509,8 @@
                     height: 500px;
                     .new {
                         padding: 10px 22px 10px 22px;
-                        top: 45px;
-                        right: 45px;
+                        top: 30px;
+                        right: 30px;
                         font-size: 2em;
                     }
                     &__bandeau {
@@ -498,7 +555,7 @@
                                     display: none;
                                 }
                                 .active-at-769 {
-                                    display: inline;
+                                    display: none;
                                 }
                                 h3 {
                                     font-size: 2.3em;
@@ -524,15 +581,16 @@
         .commande {
             &__button {
                 width: 425px;
+                height: 120px;
                 padding-top: 35px;
                 padding-bottom: 35px;
                 font-size: 2.5em;
             }
         }
 
-        footer {
+        /*footer {
             font-size: 0.75em;
-        }
+        }*/
     }
 }
 
@@ -544,6 +602,9 @@
                     &__shadow-holder {
                         &__plat {
                             &__nom {
+                                .active-at-360 {
+                                    display: none;
+                                }
                                 .active-at-480 {
                                     display: none;
                                 }
@@ -584,7 +645,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        header {
+        /*header {
             h1 {
                 font-size: 5em;
             }
@@ -593,7 +654,7 @@
             &__ville, .fa-map-marker-alt {
                 font-size: 3em;
             }
-        }
+        }*/
         .explorer {
             h2 {
                 font-size: 3em;
@@ -610,10 +671,9 @@
             }
         }
         .fonctionnement {
-            padding-bottom: 300px;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             h2 {
                 font-size: 3em;
                 width: 100%;
@@ -622,10 +682,11 @@
             &__bubble {
                 height: 400px;
                 width: 232px;
+                margin-right: 20px;
+                margin-left: 20px;
                 flex-direction: column;
                 justify-content: center;
                 .fa-mobile-alt, .fa-list-ul, .fa-store {
-                    font-size: 1em;
                     margin: 0;
                     padding: 0;
                     position: absolute;
@@ -634,7 +695,6 @@
                 &__content {
                     margin: 0;
                     p {
-                        font-size: 0.8em;
                         margin-top: 0;
                     }
                 }
@@ -643,13 +703,6 @@
                     align-self: center;
                     transform: translateY(-200px);
                     right: unset;
-                    .fa-circle {
-                        font-size: 1.75em;
-                    }
-                    .number {
-                        font-size: 0.75em;
-                        left: 27px;
-                    }
                 }
             }
         }
@@ -664,14 +717,15 @@
                     width: 50%;
                 }
                 &__module {
-                    height: 300px;
+                    height: 400px;
+                    padding: 10px;
                     &__background {
                         border-radius: 30px 30px 0 0;
                     }
                     .new {
                         padding: 10px 19px 10px 19px;
-                        top: 35px;
-                        right: 37px;
+                        top: 30px;
+                        right: 30px;
                         font-size: 1.5em;
                     }
                     &__bandeau {
@@ -711,6 +765,10 @@
                 }
             }
             &__section {
+                margin-bottom: 50px;
+                &__nom {
+                    font-size: 3em;
+                }
                 &__liste {
                     &__shadow-holder {
                         max-width: 890px;
@@ -747,9 +805,9 @@
                 }
             }
         }
-        footer {
+        /*footer {
             font-size: 0.75em;
-        }
+        }*/
     }
 }
 
@@ -761,7 +819,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        header {
+        /*header {
             h1 {
                 font-size: 5em;
             }
@@ -786,12 +844,11 @@
                 font-size: 3.5em;        
                 border-radius: 100px;
             }
-        }
+        }*/
         .fonctionnement {
-            padding-bottom: 300px;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             text-align: center;
             h2 {
                 font-size: 4em;
@@ -804,7 +861,7 @@
                 flex-direction: column;
                 justify-content: center;
                 .fa-mobile-alt, .fa-list-ul, .fa-store {
-                    font-size: 1.5em;
+                    font-size: 3.5em;
                     margin: 0;
                     padding: 0;
                     position: absolute;
@@ -813,21 +870,17 @@
                 &__content {
                     margin: 0;
                     p {
-                        font-size: 1em;
                         margin-top: 0;
                     }
                 }
                 .circle {
+                    font-size: 1.5em;
                     position: absolute;
                     align-self: center;
                     transform: translateY(-200px);
                     right: unset;
-                    .fa-circle {
-                        font-size: 2.75em;
-                    }
                     .number {
-                        font-size: 1.75em;
-                        left: 35px;
+                        left: 33px;
                     }
                 }
             }
@@ -849,10 +902,10 @@
                         border-radius: 30px 30px 0 0;
                     }
                     .new {
-                        padding: 10px 19px 10px 19px;
-                        top: 35px;
-                        right: 37px;
-                        font-size: 1.5em;
+                        padding: 7px 15px 7px 15px;
+                        top: 25px;
+                        right: 25px;
+                        font-size: 1em;
                     }
                     &__bandeau {
                         height: 245px;
@@ -918,9 +971,9 @@
                 }
             }
         }
-        footer {
+        /*footer {
             font-size: 0.75em;
-        }
+        }*/
     }
 }
 
@@ -940,27 +993,26 @@ a {
         word-break: break-word;
     }
     h2 {
-        margin-top: 90px;
-        margin-left: 120px;
-        margin-right: 120px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     p {
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    padding-bottom: 700px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     background-color: white;
     margin: 0;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
     h2 {
-        margin-left: 20px;
         margin-bottom: 50px;
     }
 }
