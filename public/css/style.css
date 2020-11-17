@@ -15,7 +15,7 @@
   body .restaurants__liste__module__bandeau__fav .fa-heart__empty {
     -webkit-text-stroke: 1px #000;
   }
-  body .restaurants__liste a {
+  body .restaurants__liste form {
     width: 100%;
   }
   body .menu__text__fav .fa-heart {
@@ -117,7 +117,7 @@
   body .restaurants h2 {
     font-size: 3em;
   }
-  body .restaurants__liste a {
+  body .restaurants__liste form {
     width: 100%;
   }
   body .restaurants__liste__module {
@@ -301,7 +301,7 @@
   body .restaurants h2 {
     font-size: 3em;
   }
-  body .restaurants__liste a {
+  body .restaurants__liste form {
     width: 100%;
   }
   body .restaurants__liste__module {
@@ -461,7 +461,7 @@
   body .restaurants h2 {
     font-size: 3em;
   }
-  body .restaurants__liste a {
+  body .restaurants__liste form {
     width: 100%;
   }
   body .restaurants__liste__module {
@@ -631,7 +631,7 @@
   body .restaurants h2 {
     font-size: 3em;
   }
-  body .restaurants__liste a {
+  body .restaurants__liste form {
     width: 50%;
   }
   body .restaurants__liste__module {
@@ -793,7 +793,7 @@
   body .restaurants h2 {
     font-size: 4em;
   }
-  body .restaurants__liste a {
+  body .restaurants__liste form {
     width: 25%;
   }
   body .restaurants__liste__module {
@@ -869,6 +869,9 @@ a {
   align-content: center;
   justify-content: center;
   background-color: #f0f0f0;
+}
+.explorer form {
+  display: block;
 }
 .explorer h2, .explorer p {
   text-align: center;
@@ -1055,7 +1058,7 @@ button:focus {
   outline: 0;
 }
 
-.explorer a {
+.explorer form {
   align-self: center;
 }
 .explorer__button {
