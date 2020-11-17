@@ -261,7 +261,7 @@ button:focus {outline:0;}
                         &:hover + .fa-heart__filler {
                             animation-name: heart-fill;
                             animation-duration: 500ms;
-                            animation-fill-mode: forwards;
+                            animation-fill-mode: both;
                         }
                     }
                 }

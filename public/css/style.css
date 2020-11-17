@@ -9,8 +9,17 @@
     overflow-x: hidden;
     width: 100%;
   }
+  body .restaurants__liste__module__bandeau__fav .fa-heart {
+    font-size: 1.5em;
+  }
+  body .restaurants__liste__module__bandeau__fav .fa-heart__empty {
+    -webkit-text-stroke: 1px #000;
+  }
   body .restaurants__liste a {
     width: 100%;
+  }
+  body .menu__text__fav .fa-heart {
+    font-size: 1.5em;
   }
   body .menu__section__liste__shadow-holder__plat__nom {
     width: 100%;
@@ -1295,7 +1304,7 @@ button:focus {
 .restaurants__liste__module__bandeau__fav .fa-heart:hover + .fa-heart__filler {
   animation-name: heart-fill;
   animation-duration: 500ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 @keyframes heart-fill {
@@ -1461,7 +1470,7 @@ footer .links_footer .fa-utensils {
 .menu__text__fav .fa-heart:hover + .fa-heart__filler {
   animation-name: heart-fill;
   animation-duration: 500ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 .menu__section {
   margin-bottom: 20px;
