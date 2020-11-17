@@ -121,7 +121,7 @@
                     margin-right: 25px;
                 }
                 &__content {
-                    p {
+                    span {
                         font-size: 2em;
                     }
                 }
@@ -159,11 +159,8 @@
                             margin-left: 25px;
                             margin-bottom: 15px;
                             margin-top: 15px;
-                            h3 {
+                            .nom, .lieu {
                                 font-size: 2.5em;
-                            }
-                            p {
-                                font-size: 2em;
                             }
                         }
                         &__fav {
@@ -360,11 +357,8 @@
                     &__bandeau {
                         height: 245px;
                         &__nom-loc {
-                            h3 {
+                            .nom, .lieu {
                                 font-size: 3em;
-                            }
-                            p {
-                                font-size: 2.75em;
                             }
                         }
                     }
@@ -535,11 +529,8 @@
                     &__bandeau {
                         height: 245px;
                         &__nom-loc {
-                            h3 {
+                            .nom, .lieu {
                                 font-size: 3em;
-                            }
-                            p {
-                                font-size: 2.75em;
                             }
                         }
                     }
@@ -713,7 +704,7 @@
                 }
                 &__content {
                     margin: 0;
-                    p {
+                    span {
                         margin-top: 0;
                     }
                 }
@@ -760,11 +751,8 @@
                             }
                         }
                         &__nom-loc {
-                            h3 {
+                            .nom, .lieu {
                                 font-size: 2em;
-                            }
-                            p {
-                                font-size: 1.9em;
                             }
                         }
                     }
@@ -888,7 +876,7 @@
                 }
                 &__content {
                     margin: 0;
-                    p {
+                    span {
                         margin-top: 0;
                     }
                 }
@@ -939,11 +927,8 @@
                             }
                         }
                         &__nom-loc {
-                            h3 {
+                            .nom, .lieu {
                                 font-size: 2em;
-                            }
-                            p {
-                                font-size: 1.9em;
                             }
                         }
                     }

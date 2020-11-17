@@ -32,7 +32,7 @@ footer {
     }
 }
 
-h3, p {
+h3, p, span {
     font-family: 'Roboto';
 }
 
@@ -67,7 +67,7 @@ h2 {
     }
     &__bubble {
         &__content {
-            p {
+            span {
                 font-family: 'Roboto-Bold';
             }
         }

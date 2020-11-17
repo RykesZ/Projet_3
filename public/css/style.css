@@ -97,7 +97,7 @@
   body .fonctionnement__bubble .fa-store {
     margin-right: 25px;
   }
-  body .fonctionnement__bubble__content p {
+  body .fonctionnement__bubble__content span {
     font-size: 2em;
   }
   body .fonctionnement__bubble .circle {
@@ -135,11 +135,8 @@
     margin-bottom: 15px;
     margin-top: 15px;
   }
-  body .restaurants__liste__module__bandeau__nom-loc h3 {
+  body .restaurants__liste__module__bandeau__nom-loc .nom, body .restaurants__liste__module__bandeau__nom-loc .lieu {
     font-size: 2.5em;
-  }
-  body .restaurants__liste__module__bandeau__nom-loc p {
-    font-size: 2em;
   }
   body .restaurants__liste__module__bandeau__fav {
     margin-right: 75px;
@@ -316,11 +313,8 @@
   body .restaurants__liste__module__bandeau {
     height: 245px;
   }
-  body .restaurants__liste__module__bandeau__nom-loc h3 {
+  body .restaurants__liste__module__bandeau__nom-loc .nom, body .restaurants__liste__module__bandeau__nom-loc .lieu {
     font-size: 3em;
-  }
-  body .restaurants__liste__module__bandeau__nom-loc p {
-    font-size: 2.75em;
   }
   body .menu__text h2 {
     font-size: 3.5em;
@@ -476,11 +470,8 @@
   body .restaurants__liste__module__bandeau {
     height: 245px;
   }
-  body .restaurants__liste__module__bandeau__nom-loc h3 {
+  body .restaurants__liste__module__bandeau__nom-loc .nom, body .restaurants__liste__module__bandeau__nom-loc .lieu {
     font-size: 3em;
-  }
-  body .restaurants__liste__module__bandeau__nom-loc p {
-    font-size: 2.75em;
   }
   body .menu__text h2 {
     font-size: 4em;
@@ -615,7 +606,7 @@
   body .fonctionnement__bubble__content {
     margin: 0;
   }
-  body .fonctionnement__bubble__content p {
+  body .fonctionnement__bubble__content span {
     margin-top: 0;
   }
   body .fonctionnement__bubble .circle {
@@ -660,11 +651,8 @@
   body .restaurants__liste__module__bandeau__fav .fa-heart {
     font-size: 3em;
   }
-  body .restaurants__liste__module__bandeau__nom-loc h3 {
+  body .restaurants__liste__module__bandeau__nom-loc .nom, body .restaurants__liste__module__bandeau__nom-loc .lieu {
     font-size: 2em;
-  }
-  body .restaurants__liste__module__bandeau__nom-loc p {
-    font-size: 1.9em;
   }
   body .menu__text h2 {
     font-size: 5em;
@@ -772,7 +760,7 @@
   body .fonctionnement__bubble__content {
     margin: 0;
   }
-  body .fonctionnement__bubble__content p {
+  body .fonctionnement__bubble__content span {
     margin-top: 0;
   }
   body .fonctionnement__bubble .circle {
@@ -821,11 +809,8 @@
   body .restaurants__liste__module__bandeau__fav .fa-heart {
     font-size: 3em;
   }
-  body .restaurants__liste__module__bandeau__nom-loc h3 {
+  body .restaurants__liste__module__bandeau__nom-loc .nom, body .restaurants__liste__module__bandeau__nom-loc .lieu {
     font-size: 2em;
-  }
-  body .restaurants__liste__module__bandeau__nom-loc p {
-    font-size: 1.9em;
   }
   body .menu__text h2 {
     font-size: 6em;
@@ -986,7 +971,7 @@ footer p {
   font-family: "Roboto", sans-serif;
 }
 
-h3, p {
+h3, p, span {
   font-family: "Roboto";
 }
 
@@ -1014,7 +999,7 @@ h2 {
 .fonctionnement h2 {
   font-size: 2em;
 }
-.fonctionnement__bubble__content p {
+.fonctionnement__bubble__content span {
   font-family: "Roboto-Bold";
 }
 .fonctionnement__bubble .number {
@@ -1275,14 +1260,16 @@ button:focus {
   margin-left: 15px;
   margin-bottom: 5px;
 }
-.restaurants__liste__module__bandeau__nom-loc h3 {
+.restaurants__liste__module__bandeau__nom-loc .nom {
+  display: block;
   margin: 0;
   font-size: 1.3em;
   font-weight: bold;
   text-align: left;
 }
-.restaurants__liste__module__bandeau__nom-loc p {
-  font-size: 1em;
+.restaurants__liste__module__bandeau__nom-loc .lieu {
+  display: block;
+  font-size: 1.3em;
   margin: 0;
   text-align: left;
   margin-top: 5px;
