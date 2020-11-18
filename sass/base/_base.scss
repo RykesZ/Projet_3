@@ -44,6 +44,32 @@
                                 .active-at-360 {
                                     display: inline;
                                 }
+                                .active-at-400 {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        .menu {
+            &__section {
+                &__liste {
+                    &__shadow-holder {
+                        &__plat {
+                            &__nom {
+                                .active-at-360 {
+                                    display: none;
+                                }
+                                .active-at-400 {
+                                    display: inline;
+                                }
                             }
                         }
                     }
@@ -174,6 +200,7 @@
             }
         }
         .menu {
+            margin-top: 400px;
             padding-left: 25px;
             padding-right: 25px;
             &__text {
@@ -209,6 +236,9 @@
                                 width: 100%;
                                 padding-right: 110px;
                                 .active-at-360 {
+                                    display: none;
+                                }
+                                .active-at-400 {
                                     display: none;
                                 }
                                 .active-at-480 {
@@ -247,11 +277,11 @@
         }
         .commande {
             &__button {
-                width: 300px;
-                height: 75px;
-                padding-top: 25px;
-                padding-bottom: 25px;
-                font-size: 1.5em;
+                width: 350px;
+                height: 100px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                font-size: 2em;
             }
         }
 
@@ -366,6 +396,7 @@
             }
         }
         .menu {
+            margin-top: 500px;
             &__text {
                 h2 {
                     font-size: 3.5em;
@@ -538,6 +569,7 @@
             }
         }
         .menu {
+            border-radius: 75px 75px 0 0;
             &__text {
                 h2 {
                     font-size: 4em;
@@ -607,6 +639,7 @@
 @media screen and (min-width: 900px) {
     body {
         .menu {
+            margin-top: 600px;
             &__section {
                 &__liste {
                     &__shadow-holder {
@@ -758,25 +791,29 @@
             }
         }
         .menu {
+            border-radius: 100px 100px 0 0;
+            margin-top: 700px;
+            padding-left: 100px;
+            padding-right: 100px;
             &__text {
                 h2 {
-                    font-size: 5em;
+                    font-size: 4em;
                 }
                 &__fav {
                     margin-right: 100px;
                     .fa-heart {
-                        font-size: 5em;
+                        font-size: 4em;
                     }
                 }
             }
             &__section {
                 margin-bottom: 50px;
                 &__nom {
-                    font-size: 3em;
+                    font-size: 2.3em;
                 }
                 &__liste {
                     &__shadow-holder {
-                        max-width: 890px;
+                        max-width: 580px;
                         &__plat {
                             &__nom {
                                 width: 100%;
@@ -793,21 +830,31 @@
                                     display: none;
                                 }
                                 h3 {
-                                    font-size: 3em;
+                                    font-size: 1.7em;
                                 }
                                 p {
-                                    font-size: 2.4em;
+                                    font-size: 1.4em;
                                 }
                                 
                             }
                             .animated {
                                 &__prix {
-                                    font-size: 2.4em;
+                                    font-size: 1.4em;
+                                    padding-right: 30px;
                                 }
                             }
                         }
                     }
                 }
+            }
+        }
+        .commande {
+            &__button {
+                width: 400px;
+                height: 100px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                font-size: 2em;
             }
         }
         /*footer {
@@ -932,27 +979,36 @@
             }
         }
         .menu {
+            padding-left: 200px;
+            padding-right: 200px;
+            margin-top: 770px;
             &__text {
                 h2 {
-                    font-size: 6em;
+                    font-size: 4.5em;
                 }
                 &__fav {
-                    margin-right: 200px;
+                    margin-right: 150px;
                     .fa-heart {
-                        font-size: 6em;
+                        font-size: 4em;
                     }
                 }
             }
             &__section {
                 &__nom {
-                    font-size: 3.6em;
+                    font-size: 2.3em;
                 }
                 &__liste {
                     justify-content: center;
                     &__shadow-holder {
-                        max-width: 855px;
+                        max-width: 530px;
                         &__plat {
                             &__nom {
+                                h3 {
+                                    font-size: 1.7em;
+                                }
+                                p {
+                                    font-size: 1.4em;
+                                }
                                 .active-at-480 {
                                     display: none;
                                 }
