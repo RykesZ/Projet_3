@@ -25,7 +25,7 @@ button:focus {outline:0;}
         &:hover {
             box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 20%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 20%);
             animation-name: lighten-button;
-            animation-duration: 200ms;
+            animation-duration: 0ms;
             animation-fill-mode: both;
             animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
         }
