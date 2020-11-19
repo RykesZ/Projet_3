@@ -252,6 +252,7 @@ button:focus {outline:0;}
                         }
                         &__filler {
                             transform: scale(0);
+                            transition: transform 500ms ease-in-out;
                             background: -moz-linear-gradient(bottom, $colour-secondary 0%, $colour-primary 90%); 
                             background: -webkit-linear-gradient(bottom,$colour-secondary 0%, $colour-primary 90%); 
                             background: linear-gradient(to top,$colour-secondary 0%, $colour-primary 90%);
@@ -262,9 +263,10 @@ button:focus {outline:0;}
                            z-index: 4;
                         }
                         &:hover + .fa-heart__filler {
-                            animation-name: heart-fill;
+                            transform: scale(1);
+                            /*animation-name: heart-fill;
                             animation-duration: 500ms;
-                            animation-fill-mode: both;
+                            animation-fill-mode: both;*/
                         }
                     }
                 }
