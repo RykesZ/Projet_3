@@ -6,7 +6,7 @@ button:focus {outline:0;}
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1em;
-    box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
+    box-shadow: 0 8px 16px 0 nth($black-shadow-colours, 1), 0 6px 20px 0 nth($black-shadow-colours, 2);
     background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
     color: white;
     font-family: "Roboto";
@@ -20,54 +20,6 @@ button:focus {outline:0;}
     cursor: pointer;
     &:hover {
         box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 20%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 20%);
-        animation-name: lighten-button;
-        animation-duration: 0ms;
-        animation-fill-mode: both;
-        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-    }
-}
-
-@keyframes animate-gradient {
-    0% {
-        background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    10% {
-        background-image: linear-gradient(220deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    20% {
-        background-image: linear-gradient(265deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    30% {
-        background-image: linear-gradient(310deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    40% {
-        background-image: linear-gradient(355deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    50% {
-        background-image: linear-gradient(400deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    60% {
-        background-image: linear-gradient(445deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    70% {
-        background-image: linear-gradient(490deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    80% {
-        background-image: linear-gradient(535deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    90% {
-        background-image: linear-gradient(580deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    100% {
-        background-image: linear-gradient(625deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-}
-
-@keyframes lighten-button {
-    0% {
-        background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
-    }
-    100% {
         background-image: linear-gradient(175deg, lighten($colour-secondary, 10%) 0%, lighten($colour-primary, 10%) 70%);
     }
 }
@@ -195,22 +147,10 @@ button:focus {outline:0;}
                         }
                         &:hover + .fa-heart__filler {
                             transform: scale(1);
-                            /*animation-name: heart-fill;
-                            animation-duration: 500ms;
-                            animation-fill-mode: both;*/
                         }
                     }
                 }
             }
         }
-    }
-}
-
-@keyframes heart-fill {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
     }
 }

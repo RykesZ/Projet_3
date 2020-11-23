@@ -1005,55 +1005,9 @@ button:focus {
 }
 .big_button:hover {
   box-shadow: 0 8px 16px 0 rgba(119, 119, 119, 0.5), 0 6px 20px 0 rgba(129, 129, 129, 0.5);
-  animation-name: lighten-button;
-  animation-duration: 0ms;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  background-image: linear-gradient(175deg, #fface8 0%, #ae80e5 70%);
 }
 
-@keyframes animate-gradient {
-  0% {
-    background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
-  }
-  10% {
-    background-image: linear-gradient(220deg, #FF79DA 0%, #9356DC 70%);
-  }
-  20% {
-    background-image: linear-gradient(265deg, #FF79DA 0%, #9356DC 70%);
-  }
-  30% {
-    background-image: linear-gradient(310deg, #FF79DA 0%, #9356DC 70%);
-  }
-  40% {
-    background-image: linear-gradient(355deg, #FF79DA 0%, #9356DC 70%);
-  }
-  50% {
-    background-image: linear-gradient(400deg, #FF79DA 0%, #9356DC 70%);
-  }
-  60% {
-    background-image: linear-gradient(445deg, #FF79DA 0%, #9356DC 70%);
-  }
-  70% {
-    background-image: linear-gradient(490deg, #FF79DA 0%, #9356DC 70%);
-  }
-  80% {
-    background-image: linear-gradient(535deg, #FF79DA 0%, #9356DC 70%);
-  }
-  90% {
-    background-image: linear-gradient(580deg, #FF79DA 0%, #9356DC 70%);
-  }
-  100% {
-    background-image: linear-gradient(625deg, #FF79DA 0%, #9356DC 70%);
-  }
-}
-@keyframes lighten-button {
-  0% {
-    background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
-  }
-  100% {
-    background-image: linear-gradient(175deg, #fface8 0%, #ae80e5 70%);
-  }
-}
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -1178,19 +1132,8 @@ button:focus {
 }
 .restaurants__liste__module__bandeau__fav .fa-heart:hover + .fa-heart__filler {
   transform: scale(1);
-  /*animation-name: heart-fill;
-  animation-duration: 500ms;
-  animation-fill-mode: both;*/
 }
 
-@keyframes heart-fill {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 header {
   display: flex;
   justify-content: center;
