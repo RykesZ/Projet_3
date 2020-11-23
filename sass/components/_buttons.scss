@@ -77,69 +77,6 @@ button:focus {outline:0;}
     }
 }
 
-.fonctionnement {
-    &__bubble {
-        border: hidden;
-        background-color: #f0f0f0;
-        height: 70px;
-        border-radius: 20px;
-        margin-top: 15px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.5), 0 3px 10px 0 rgba(220, 220, 220, 0.5);
-        font-size: 1em;
-        font-family: "Roboto-Bold";
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        pointer-events: none;
-        &--purple {
-            background-color: #eee0ff;
-        }
-        &__content {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            i {
-                justify-self: flex-start;
-                align-self: center;
-            }
-        }
-        .fa-mobile-alt {
-            margin-left: -15px;
-            margin-right: 25px;
-            color: gray;
-        }
-        .fa-list-ul {
-            margin-left: -15px;
-            margin-right: 25px;
-            color: gray;
-        }
-        .fa-store {
-            margin-left: -15px;
-            margin-right: 25px;
-            color: $colour-primary;
-        }
-        .circle {
-            position: relative;
-            right: 35px;
-            display: flex;
-            .fa-circle {
-                color: $colour-primary;
-            }
-            .number {
-                position: absolute;
-                z-index: 2;
-                left: 12px;
-                align-self: center;
-                text-align: center;
-                color: white;
-                margin: 0;
-            }
-        }
-    }
-}
 
 .restaurants {
     display: flex;

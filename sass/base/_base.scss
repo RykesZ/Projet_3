@@ -332,42 +332,6 @@
                 font-size: 2em;
             }
         }
-        /*.fonctionnement {
-            padding-bottom: 300px;
-            h2 {
-                font-size: 3em;
-            }
-            &__bubble {
-                height: 175px;
-                .fa-mobile-alt, .fa-list-ul, .fa-store {
-                    font-size: 1em;
-                    margin-left: -50px;
-                }
-                .fa-mobile-alt {
-                    margin-right: 40px;
-                }
-                .fa-list-ul {
-                    margin-right: 30px;
-                }
-                .fa-store {
-                    margin-right: 25px;
-                }
-                &__content {
-                    p {
-                        font-size: 0.8em;
-                    }
-                }
-                .circle {
-                    .fa-circle {
-                        font-size: 1.75em;
-                    }
-                    .number {
-                        font-size: 0.75em;
-                        left: 27px;
-                    }
-                }
-            }
-        }*/
         .restaurants {
             h2 {
                 font-size: 3em;
@@ -474,73 +438,6 @@
         display: flex;
         flex-direction: column;
         align-content: center;
-        /*header {
-            h1 {
-                font-size: 3.9em;
-            }
-        }
-        #Retour {
-            padding-left: 40px;
-            .fa-arrow-left {
-                font-size: 3em;
-            }
-        }
-        .localisation {
-            &__ville {
-                font-size: 2em;
-            }
-        }
-        .explorer {
-            h2 {
-                font-size: 2.5em;
-                margin-right: 20px;
-                margin-left: 20px;
-            }
-            p {
-                font-size: 2em;
-            }
-            &__button {
-                width: 600px;
-                height: 130px;
-                font-size: 2.7em;
-            }
-        }
-        .fonctionnement {
-            padding-bottom: 300px;
-            h2 {
-                font-size: 3em;
-            }
-            &__bubble {
-                height: 175px;
-                .fa-mobile-alt, .fa-list-ul, .fa-store {
-                    font-size: 1em;
-                    margin-left: -50px;
-                }
-                .fa-mobile-alt {
-                    margin-right: 40px;
-                }
-                .fa-list-ul {
-                    margin-right: 30px;
-                }
-                .fa-store {
-                    margin-right: 25px;
-                }
-                &__content {
-                    p {
-                        font-size: 0.8em;
-                    }
-                }
-                .circle {
-                    .fa-circle {
-                        font-size: 1.75em;
-                    }
-                    .number {
-                        font-size: 0.75em;
-                        left: 27px;
-                    }
-                }
-            }
-        }*/
         .restaurants {
             h2 {
                 font-size: 3em;
@@ -629,10 +526,6 @@
                 font-size: 2.5em;
             }
         }
-
-        /*footer {
-            font-size: 0.75em;
-        }*/
     }
 }
 
@@ -686,16 +579,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*header {
-            h1 {
-                font-size: 5em;
-            }
-        }
-        .localisation {
-            &__ville, .fa-map-marker-alt {
-                font-size: 3em;
-            }
-        }*/
         .explorer {
             h2 {
                 font-size: 3em;
@@ -857,9 +740,6 @@
                 font-size: 2em;
             }
         }
-        /*footer {
-            font-size: 0.75em;
-        }*/
     }
 }
 
@@ -869,32 +749,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*header {
-            h1 {
-                font-size: 5em;
-            }
-        }
-        .localisation {
-            &__ville, .fa-map-marker-alt {
-                font-size: 3em;
-            }
-        }
-        .explorer {
-            h2 {
-                font-size: 3.5em;
-                margin-right: 20px;
-                margin-left: 20px;
-            }
-            p {
-                font-size: 3em;
-            }
-            &__button {
-                width: 800px;
-                height: 200px;
-                font-size: 3.5em;        
-                border-radius: 100px;
-            }
-        }*/
         .fonctionnement {
             flex-direction: row;
             flex-wrap: wrap;
@@ -1027,15 +881,7 @@
                 }
             }
         }
-        /*footer {
-            font-size: 0.75em;
-        }*/
     }
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
 }
 
 .explorer {
@@ -1073,6 +919,67 @@ a {
     padding-right: 20px;
     h2 {
         margin-bottom: 50px;
+    }
+    &__bubble {
+        border: hidden;
+        background-color: #f0f0f0;
+        height: 70px;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(210, 210, 210, 0.5), 0 3px 10px 0 rgba(220, 220, 220, 0.5);
+        font-size: 1em;
+        font-family: "Roboto-Bold";
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        pointer-events: none;
+        &--purple {
+            background-color: #eee0ff;
+        }
+        &__content {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            i {
+                justify-self: flex-start;
+                align-self: center;
+            }
+        }
+        .fa-mobile-alt {
+            margin-left: -15px;
+            margin-right: 25px;
+            color: gray;
+        }
+        .fa-list-ul {
+            margin-left: -15px;
+            margin-right: 25px;
+            color: gray;
+        }
+        .fa-store {
+            margin-left: -15px;
+            margin-right: 25px;
+            color: $colour-primary;
+        }
+        .circle {
+            position: relative;
+            right: 35px;
+            display: flex;
+            .fa-circle {
+                color: $colour-primary;
+            }
+            .number {
+                position: absolute;
+                z-index: 2;
+                left: 12px;
+                align-self: center;
+                text-align: center;
+                color: white;
+                margin: 0;
+            }
+        }
     }
 }
 
