@@ -1,34 +1,29 @@
 button:focus {outline:0;}
 
-.explorer {
-    form {
-        align-self: center;
-    }
-    &__button {
-        border-radius: 60px;
-        padding: 12px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 1em;
-        box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
-        background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
-        color: white;
-        font-family: "Roboto";
-        font-weight: 700;
-        border: none;
-        margin-top: 10px;
-        margin-bottom: 60px;
-        width: 235px;
-        height: 61px;
-        align-self: center;
-        cursor: pointer;
-        &:hover {
-            box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 20%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 20%);
-            animation-name: lighten-button;
-            animation-duration: 0ms;
-            animation-fill-mode: both;
-            animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-        }
+.big_button {
+    border-radius: 60px;
+    padding: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1em;
+    box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
+    background-image: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 70%);
+    color: white;
+    font-family: "Roboto";
+    font-weight: 700;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 235px;
+    height: 60px;
+    align-self: center;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 20%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 20%);
+        animation-name: lighten-button;
+        animation-duration: 0ms;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
     }
 }
 
@@ -76,7 +71,6 @@ button:focus {outline:0;}
         background-image: linear-gradient(175deg, lighten($colour-secondary, 10%) 0%, lighten($colour-primary, 10%) 70%);
     }
 }
-
 
 .restaurants {
     display: flex;
@@ -218,35 +212,5 @@ button:focus {outline:0;}
     }
     100% {
         transform: scale(1);
-    }
-}
-
-.commande {
-    display: flex;
-    justify-content: center;
-    background-color: #e6e6e6;
-    margin: 0;
-    &__button {
-        border-radius: 60px;
-        padding: 15px;
-        font-size: 1.1em;
-        box-shadow: 0 8px 16px 0 rgba(170, 170, 170, 0.5), 0 6px 20px 0 rgba(180, 180, 180, 0.5);
-        background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
-        color: white;
-        font-family: "Roboto";
-        font-weight: 700;
-        border: none;
-        margin-bottom: 80px;
-        margin-top: 40px;
-        width: 225px;
-        height: 60px;
-        align-self: center;
-        cursor: pointer;
-        &:hover {
-            box-shadow: 0 8px 16px 0 darken(nth($black-shadow-colours, 1), 20%), 0 6px 20px 0 darken(nth($black-shadow-colours, 2), 20%);
-            animation-name: lighten-button;
-            animation-duration: 0ms;
-            animation-fill-mode: both;
-        }
     }
 }

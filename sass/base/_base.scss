@@ -88,6 +88,11 @@
         display: flex;
         flex-direction: column;
         align-content: center;
+        .big_button {
+            width: 353px;
+            height: 92px;
+            font-size: 1.5em;
+        }
         header {
             height: 105px;
             h1 {
@@ -118,11 +123,6 @@
             }
             p {
                 font-size: 2em;
-            }
-            &__button {
-                width: 353px;
-                height: 92px;
-                font-size: 1.5em;
             }
         }
         .fonctionnement {
@@ -275,15 +275,6 @@
                 }
             }
         }
-        .commande {
-            &__button {
-                width: 350px;
-                height: 100px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                font-size: 2em;
-            }
-        }
 
         footer {
             font-size: 1.5em;
@@ -301,6 +292,11 @@
         display: flex;
         flex-direction: column;
         align-content: center;
+        .big_button {
+            width: 450px;
+            height: 110px;
+            font-size: 2em;
+        }
         header {
             h1 {
                 font-size: 3em;
@@ -324,11 +320,6 @@
                 margin-left: 20px;
             }
             p {
-                font-size: 2em;
-            }
-            &__button {
-                width: 450px;
-                height: 110px;
                 font-size: 2em;
             }
         }
@@ -410,15 +401,6 @@
                         }
                     }
                 }
-            }
-        }
-        .commande {
-            &__button {
-                width: 350px;
-                height: 100px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                font-size: 2em;
             }
         }
 
@@ -517,15 +499,6 @@
                 }
             }
         }
-        .commande {
-            &__button {
-                width: 425px;
-                height: 120px;
-                padding-top: 35px;
-                padding-bottom: 35px;
-                font-size: 2.5em;
-            }
-        }
     }
 }
 
@@ -588,7 +561,7 @@
             p {
                 font-size: 2.5em;
             }
-            &__button {
+            .big_button {
                 width: 550px;
                 height: 120px;
                 font-size: 2.5em;
@@ -729,15 +702,6 @@
                         }
                     }
                 }
-            }
-        }
-        .commande {
-            &__button {
-                width: 400px;
-                height: 100px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                font-size: 2em;
             }
         }
     }
@@ -891,6 +855,7 @@
     justify-content: center;
     background-color: #f0f0f0;
     form {
+        align-self: center;
         display: block;
     }
     h2, p {
@@ -1042,4 +1007,11 @@
         pointer-events: none;
         transform: scale(0);
     }
+}
+
+.commande {
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6e6;
+    margin: 0;
 }
