@@ -731,9 +731,10 @@
   word-break: break-word;
 }
 .explorer h2 {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 0;
 }
 .explorer p {
   margin-left: 20px;
@@ -923,17 +924,17 @@ h2 {
 }
 
 .explorer h2 {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 .explorer p {
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 .explorer__button {
   font-family: "Roboto-Bold";
 }
 
 .fonctionnement h2 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 .fonctionnement__bubble__content span {
   font-family: "Roboto-Bold";
@@ -944,7 +945,7 @@ h2 {
 }
 
 .restaurants h2 {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .menu__section__nom {
@@ -1196,7 +1197,7 @@ footer p {
 footer .links_footer {
   display: flex;
   justify-content: flex-start;
-  margin-top: 10px;
+  margin-top: 0;
 }
 footer .links_footer .fa-hands-helping {
   color: white;
