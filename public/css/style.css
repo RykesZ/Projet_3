@@ -728,7 +728,7 @@
 }
 .explorer h2, .explorer p {
   text-align: center;
-  word-break: break-word;
+  word-break: normal;
 }
 .explorer h2 {
   margin-top: 40px;
@@ -915,7 +915,7 @@ h3, p, span {
 h2 {
   font-family: "Roboto-Bold";
   font-size: 4em;
-  font-weight: 1000;
+  font-weight: 900;
 }
 
 .localisation__ville {
@@ -1127,7 +1127,6 @@ button:focus {
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 4;
 }
@@ -1254,7 +1253,6 @@ footer .links_footer .fa-utensils {
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 90%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 3;
 }

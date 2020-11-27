@@ -275,12 +275,10 @@
                 }
             }
         }
-
         footer {
             font-size: 1.5em;
         }
     }
-
 }
 
 @media screen and (min-width: 600px) {
@@ -860,7 +858,7 @@
     }
     h2, p {
         text-align: center;
-        word-break: break-word;
+        word-break: normal;
     }
     h2 {
         margin-top: 40px;
